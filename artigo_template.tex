@@ -1,0 +1,147 @@
+\documentclass[10pt,twocolumn]{article}
+
+% ============================================================
+% PACOTES
+% ============================================================
+\usepackage[a4paper,top=2cm,bottom=2.2cm,left=1.6cm,right=1.6cm,columnsep=0.6cm]{geometry}
+\usepackage{times}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{indentfirst}  % <--- ADICIONADO: Recua primeiro parágrafo
+
+\hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue}
+
+% ---------- Cabeçalho e rodapé ----------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\footnotesize Universiade Estadual do Maranhão (UEMA)}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% ---------- Formatação de seções ----------
+\titleformat{\section}
+{\normalfont\centering\bfseries}
+{\Roman{section}.}{0.6em}{\MakeUppercase}
+\titleformat{\subsection}
+{\normalfont\itshape}
+{\Alph{subsection}.}{0.6em}{}
+
+% ---------- Recuo de parágrafos ----------
+\setlength{\parindent}{1.5em}  % <--- AUMENTEI PARA MELHOR VISIBILIDADE
+\setlength{\parskip}{0pt}
+
+% ---------- BIBER / BIBLATEX ----------
+\usepackage[
+backend=biber,           % Usa Biber como backend
+style=numeric,           % Estilo numérico [1], [2], [3]...
+% style=ieee,            % Alternativa: estilo IEEE
+% style=abnt,           % Alternativa: estilo ABNT (requer pacote abntex2)
+sorting=none,            % Ordem de citação (none = aparece na ordem citada)
+% sorting=ynt,          % Ordena por ano, nome, título
+maxbibnames=99,          % Mostra todos os autores na bibliografia
+minbibnames=1,           % Mínimo de autores antes de "et al."
+url=true,                % Inclui URLs
+doi=true,                % Inclui DOIs
+isbn=true,               % Inclui ISBNs
+backref=true,            % Mostra páginas onde a referência foi citada
+backrefstyle=three,      % Estilo dos backreferences
+]{biblatex}
+
+% Adiciona arquivo .bib
+\addbibresource{referencias.bib}  % Nome do seu arquivo de referências
+
+\hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue}
+
+\begin{document}
+	
+	% ============================================================
+	% TÍTULO E AUTORES
+	% ============================================================
+	\twocolumn[{%
+		\centering
+		{\LARGE\bfseries Pré-trabalho de Vibrações Mecânicas: Peteca no uso de análise da integridade estrutural de pisos}\par\vspace{1em}
+		{\normalsize {Aurélio B. L. do Nascimento; Helder F. S. Nogueira; João G. M. Silva.}}\par\vspace{1.2em}
+		\begin{minipage}{0.94\linewidth}
+			\small
+			%\textbf{Abstract}--- ...
+			%\medskip
+			%\textbf{Index Terms}--- ...
+		\end{minipage}
+		\vspace{1.5em}
+	}]
+	
+	% ============================================================
+	% INTRODUÇÃO
+	% ============================================================
+	\section{Resumo introdutório}
+	
+	É de interesse por parte deste trabalho apresentar uma análise da integridade estrutural de pisos, bem como o seu devido assentamento, por meio de ensaios não destrutivos baseados em respostas do piso à excitações por impulso. O método experimental consistir-se-á no soltar de uma bolinha de peteca sob uma determinada altura tal que venha a percorrer uma trajetória aproximadamente unidimensional em rota de colisão com uma região do piso pré-selecionada. Por meio desta experimentação, visar-se-á, então, correlacionar a variação da rigidez local com a presença de descontinuidades internas, como vazios e delaminações. 
+	
+	A partir disto, buscar-se-á registrar, por meio de gravações, sinais acústicos decorrentes dos impactos que serão posteriormente analisados com o uso de um programa feito em MATLAB que realiza transformadas de Fourier de tempo reduzido (TTF) no desejo de estimar a frequência natural amortecida $w_{d}$ [rad/s] do piso. Com isto, fazer-se-á uma modelagem de um sistema massa-mola com estruturação matemática analítica e trivial que descreverá a periodicidade ideal desta bola de peteca. Por meio desta modelagem, comparar-se-á os resultados experimentais com os resultados analíticos.
+	
+	% ============================================================
+	% OBJETIVOS
+	% ============================================================
+	\section{Objetivos}
+	
+	Para bem realizar este trabalho, selecionou-se os seguintes objetivos:
+	
+	\begin{enumerate}[label=\arabic*)]
+		\item Determinar uma altura em relação ao piso escolhido.
+		\item Escolher uma região do piso para realizar a experimentação.
+		\item Ajustar os sensores que serão utilizados.
+		\item Iniciar as gravações de vídeo e de áudio.
+		\item Soltar a bolinha de peteca sob a altura definida.
+		\item Aguardar a bolinha parar de ricochetear.
+		\item Encerrar as gravações, bem como guardar os dados coletados.
+		\item Realizar os procedimentos anteriores, porém para regiões diferentes do piso.
+		\item Utilizar o programa em MATLAB para processar os dados registrados.
+		\item Estimar uma vibração livre não amortecida ideal com os valores da experimentação que mais teve oscilações.
+	\end{enumerate}
+	
+	% ============================================================
+	% PRÉ-SELECIONAMENTO DE EQUAÇÕES
+	% ============================================================
+	\section{Pré-selecionamento de equações}
+	
+Pretende-se, por meio da modelagem analítica, utilizar certas equações, tal como a equação da frequência natural ensinada por \textcite{rao1995mechanical}
+
+\vspace{-0.4cm}
+\begin{flalign}
+	&w_{n} = \sqrt{\frac{k}{m}}&
+\end{flalign}
+
+
+Onde $w_{n}$ é a frequência natural [rad/s], $k$ é a rigidez [N/m] e $m$ é a massa [kg]. Também utilizar-se-á a equação diferencial do movimento harmônico simples, ensinada também pelo \textcite{rao1995mechanical}
+
+\vspace{-0.4cm}
+\begin{flalign}
+	&m\frac{d^{2}S(t)}{dt^{2}} +kS(t) = 0&
+\end{flalign}
+
+Onde $S(t)$ é a posição em função do tempo [m], tal que a solução para a equação (2) é dada por
+
+\vspace{-0.4cm}
+\begin{flalign}
+	&S(t) = Asen(w_{n}t+\phi)&
+\end{flalign}
+
+Onde $A$ é a amplitude da nossa vibração [m], $t$ é o tempo [s] e $\phi$ é o ângulo  de fase [rad].
+
+	\section{Referências que poderão ser utilizadas}
+	
+	Para a realização deste trabalho, pretende-se estudar artigos bem consolidados na Literatura. Por hora, conta-se com os trabalhos do \textcite{blaschke2017non}, bem como do \textcite{nikolaev2014estimation} e do \textcite{roebben1997impulse}.
+
+\printbibliography[title={Referências}]
+	
+
+	
+\end{document}

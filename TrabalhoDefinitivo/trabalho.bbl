@@ -1,0 +1,57 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{rao1995mechanical}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=bc8e9a4de974090b1914093e719a785a}{%
+           family={Rao},
+           familyi={R\bibinitperiod},
+           given={Singiresu\bibnamedelima S},
+           giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=dc2579085ed8bf119a0da5bbec016822}{%
+           family={Yap},
+           familyi={Y\bibinitperiod},
+           given={Fook\bibnamedelima Fah},
+           giveni={F\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Addison-Wesley New York}%
+      }
+      \strng{namehash}{96a0e02cb745f62860014440abcfa57b}
+      \strng{fullhash}{96a0e02cb745f62860014440abcfa57b}
+      \strng{fullhashraw}{96a0e02cb745f62860014440abcfa57b}
+      \strng{bibnamehash}{96a0e02cb745f62860014440abcfa57b}
+      \strng{authorbibnamehash}{96a0e02cb745f62860014440abcfa57b}
+      \strng{authornamehash}{96a0e02cb745f62860014440abcfa57b}
+      \strng{authorfullhash}{96a0e02cb745f62860014440abcfa57b}
+      \strng{authorfullhashraw}{96a0e02cb745f62860014440abcfa57b}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Mechanical vibrations}
+      \field{volume}{4}
+      \field{year}{1995}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

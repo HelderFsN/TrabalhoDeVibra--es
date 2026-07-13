@@ -1,0 +1,326 @@
+\documentclass[10pt,twocolumn]{article}
+
+% ============================================================
+% PACOTES
+% ============================================================
+\usepackage[a4paper,top=2cm,bottom=2.2cm,left=1.6cm,right=1.6cm,columnsep=0.6cm]{geometry}
+\usepackage{times}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{indentfirst}
+
+\hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue}
+
+% ---------- Cabeçalho e rodapé ----------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\footnotesize Universidade Estadual do Maranhão (UEMA)}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% ---------- Formatação de seções ----------
+\titleformat{\section}
+{\normalfont\centering\bfseries}
+{\Roman{section}.}{0.6em}{\MakeUppercase}
+\titleformat{\subsection}
+{\normalfont\itshape}
+{\Alph{subsection}.}{0.6em}{}
+
+% ---------- Recuo de parágrafos ----------
+\setlength{\parindent}{1.5em}
+\setlength{\parskip}{0pt}
+
+% ---------- BIBER / BIBLATEX ----------
+\usepackage[
+backend=biber,           % Usa Biber como backend
+style=numeric,           % Estilo numérico
+sorting=none,            % Ordem de citação
+maxbibnames=99,          % Mostra todos os autores na bibliografia
+minbibnames=1,           
+url=true,                
+doi=true,                
+isbn=true,               
+backref=true,            
+backrefstyle=three,      
+]{biblatex}
+
+\addbibresource{referencias.bib}
+
+\begin{document}
+	
+	% ============================================================
+	% TÍTULO E AUTORES
+	% ============================================================
+	\twocolumn[{%
+		\centering
+		{\LARGE\bfseries Desenvolvimento de um Sistema Não Destrutivo baseado na Técnica de Excitação por Impulso (TEI) para Avaliação Estrutural de Revestimentos Cerâmicos via Análise Vibracional e Processamento Digital de Sinais}\par\vspace{1em}
+		{\normalsize {Aurélio B. L. do Nascimento; Helder F. S. Nogueira; João G. M. Silva.}}\par\vspace{0.8em}
+		{\small\itshape Departamento de Engenharia Mecânica, Universidade Estadual do Maranhão (UEMA), São Luís - MA, Brasil}\par\vspace{1.2em}
+		\begin{minipage}{0.94\linewidth}
+			\small
+			\textbf{Resumo}--- Este trabalho apresenta o desenvolvimento e a validação experimental do sistema PisoVibe, uma solução automatizada de Ensaio Não Destrutivo (END) baseada na Técnica de Excitação por Impulso (TEI) para avaliação da integridade física de revestimentos cerâmicos. O método integra a cinemática de impacto de uma esfera polimérica rígida (ABS, $m = 2{,}7$ g), monitorada por um sensor de distância Time-of-Flight (VL53L0X) a $\approx 33$ Hz, com a análise acústico-vibracional de alta resolução (PCM a $48$ kHz) do som do impacto captada por dispositivo móvel. Foram ensaiados dois cenários de suporte: uma placa cerâmica íntegra (Piso Saudável, $f_n = 570{,}0$ Hz) e uma placa cerâmica fraturada (Piso Ruim, $f_n = 1.880{,}0$ Hz). A frequência natural da cerâmica fraturada deslocou-se para valores mais altos devido à subdivisão da placa em fragmentos menores de menor massa vibrante. O amortecimento estrutural ($\zeta$) foi extraído utilizando a Transformada de Hilbert via envoltória analítica ($\zeta \approx 1{,}14\%$ no piso saudável e $\zeta \approx 1{,}20\%$ no piso ruim). A cinemática do impacto revelou amortecimento severo do rebote no piso fraturado devido à dissipação de energia mecânica na fratura. O sistema demonstrou ser uma ferramenta altamente precisa e de baixo custo para controle de qualidade estrutural na construção civil.\par\vspace{0.5em}
+			\textbf{Palavras-chave}--- Ensaio Não Destrutivo (END), Excitação por Impulso, Amortecimento, Transformada de Hilbert, PisoVibe.
+		\end{minipage}
+		\vspace{1.5em}
+	}]
+	
+	% ============================================================
+	% INTRODUÇÃO
+	% ============================================================
+	\section{Introdução e Contextualização}
+	
+	A falha de aderência em revestimentos cerâmicos e pisos industriais é um problema recorrente na engenharia civil e construção de edifícios. A ausência ou a má distribuição de argamassa colante gera cavidades internas e vazios de ar sob as peças cerâmicas (fenômeno comumente denominado ``piso oco''). Sob cargas cíclicas ou impactos pontuais, essas descontinuidades acumulam tensões locais que inevitavelmente levam à fissuração, delaminação e desplacamento dos revestimentos, gerando prejuízos financeiros e riscos de acidentes.
+	
+	Tradicionalmente, a detecção de vazios sob pisos é efetuada por meio do ensaio de percussão manual (auscultação), onde um operador experiente bate uma haste metálica contra a cerâmica e avalia subjetivamente a assinatura acústica gerada (som agudo indica aderência, som grave indica vazio). Embora prático, esse método empírico apresenta severas limitações: é puramente qualitativo, depende da acuidade auditiva do operador e é altamente suscetível a fadiga em grandes áreas.
+	
+	O projeto \textbf{PisoVibe} surge como uma alternativa de automação e instrumentação deste ensaio. Por meio do emprego de um percussor padronizado em queda livre, do monitoramento óptico da trajetória ($h(t)$) e da gravação do transiente acústico em alta frequência ($48$ kHz), o sistema quantifica objetivamente a rigidez local e o amortecimento do piso. 
+	
+	O objetivo geral deste trabalho é caracterizar e quantificar a integridade do piso cerâmico por meio da correlação entre a cinemática de colisão (representada pelo coeficiente de restituição $e$) e as variáveis dinâmicas (frequência natural $f_n$ e fator de amortecimento $\zeta$).
+	
+	% ============================================================
+	% FUNDAMENTAÇÃO TEÓRICA
+	% ============================================================
+	\section{Fundamentação Teórica}
+	
+	A resposta a impactos mecânicos em estruturas delaminadas pode ser modelada utilizando os princípios da mecânica do contato e da dinâmica estrutural de sistemas vibratórios discretos.
+	
+	\subsection{Cinemática do Impacto e Coeficiente de Restituição ($e$)}
+	Durante a queda livre de uma esfera a partir de uma altura inicial $h_0$, desconsiderando a resistência do ar, a energia potencial gravitacional ($E_p = mgh_0$) é integralmente convertida em energia cinética ($E_c = \frac{1}{2}m v_i^2$). A velocidade da esfera imediatamente antes da colisão ($v_i$) é dada por:
+	\begin{equation}
+	v_i = \sqrt{2gh_0}
+	\end{equation}
+	
+	Ao colidir com a laje, parte da energia mecânica é dissipada através de atrito, deformação plástica local, ondas elásticas de choque e radiação acústica. A esfera retorna com velocidade residual $v_r$, alcançando a altura máxima de rebote $h_1$:
+	\begin{equation}
+	v_r = \sqrt{2gh_1}
+	\end{equation}
+	
+	O Coeficiente de Restituição ($e$) caracteriza a elasticidade do impacto e é matematicamente definido como a razão entre as velocidades de afastamento e aproximação:
+	\begin{equation}
+	e = \frac{v_r}{v_i} = \sqrt{\frac{h_1}{h_0}}
+	\end{equation}
+	
+	Em uma placa cerâmica rigidamente colada, o contrapiso absorve e transmite a energia, resultando em um impacto mais elástico para a esfera rígida. Se houver descolamento ou bolsões de ar, a flexão local da placa cerâmica absorve energia cinética adicional, reduzindo a altura do primeiro rebote e, consequentemente, o valor de $e$.
+	
+	\subsection{Modelo Dinâmico de 1 Grau de Liberdade (Vibração Livre Amortecida)}
+	O comportamento vibracional da placa sob excitação transiente pode ser simplificado por um sistema massa-mola-amortecedor equivalente de um grau de liberdade (1 GDL). A equação governante do movimento é descrita por:
+	\begin{equation}
+	m\ddot{x}(t) + c\dot{x}(t) + kx(t) = 0
+	\end{equation}
+	onde $m$ representa a massa equivalente da placa excitada, $c$ é a constante de amortecimento viscoso e $k$ é a rigidez equivalente da peça cerâmica apoiada. Reescrevendo em termos da frequência natural não amortecida ($\omega_n = \sqrt{k/m}$) e do fator de amortecimento ($\zeta = c / (2\sqrt{km})$), obtém-se:
+	\begin{equation}
+	\ddot{x}(t) + 2\zeta\omega_n\dot{x}(t) + \omega_n^2 x(t) = 0
+	\end{equation}
+	
+	Para estruturas típicas de concreto e cerâmica, o sistema é subamortecido ($\zeta < 1$). A resposta transiente no tempo $x(t)$ devido a uma condição inicial é dada pela equação clássica apresentada por \textcite{rao1995mechanical}:
+	\begin{equation}
+	x(t) = X_0 e^{-\zeta\omega_n t}\cos(\omega_d t + \phi)
+	\end{equation}
+	onde $X_0$ é a amplitude inicial, $\phi$ é a fase e $\omega_d = \omega_n\sqrt{1-\zeta^2}$ é a frequência natural amortecida. A rigidez local do apoio ($k$) está diretamente relacionada com a frequência natural por:
+	\begin{equation}
+	k = m \omega_n^2 = m (2\pi f_n)^2
+	\end{equation}
+	
+	\subsection{Processamento de Sinais no Domínio da Frequência (FFT)}
+	A Transformada Rápida de Fourier (FFT) é empregada para traduzir o sinal transiente discreto $x[n]$ coletado no domínio do tempo para o domínio da frequência $X[k]$. O pico da magnitude do espectro determina a frequência dominante de ressonância ($f_n$). 
+	
+	Como a rigidez equivalente do piso apoiado ($k$) decresce acentuadamente nas regiões descoladas (piso oco), a frequência natural sofrerá um desvio negativo ($\Delta f_n < 0$). Essa variação espectral constitui o principal parâmetro de identificação da rigidez de apoio.
+	
+	\subsection{Métodos de Extração do Fator de Amortecimento ($\zeta$)}
+	A extração experimental de $\zeta$ a partir de transientes acústicos é realizada por duas metodologias clássicas de processamento digital de sinais:
+	
+	\subsubsection{Decremento Logarítmico Clássico ($\delta$)}
+	A taxa de decaimento entre picos sucessivos $x_1$ e $x_{1+n}$ espaçados por $n$ períodos é quantificada por:
+	\begin{equation}
+	\delta = \frac{1}{n}\ln\left(\frac{x_1}{x_{1+n}}\right)
+	\end{equation}
+	O fator de amortecimento $\zeta$ é extraído por:
+	\begin{equation}
+	\zeta = \frac{\delta}{\sqrt{4\pi^2 + \delta^2}}
+	\end{equation}
+	
+	\subsubsection{Transformada de Hilbert (Envoltória Contínua)}
+	A Transformada de Hilbert $\hat{x}(t)$ de uma função real no tempo $x(t)$ cria o sinal analítico complexo $z(t)$ que descreve amplitude e fase instantâneas de forma contínua:
+	\begin{equation}
+	z(t) = x(t) + i\hat{x}(t)
+	\end{equation}
+	onde $\hat{x}(t) = \frac{1}{\pi} \text{P.V.} \int_{-\infty}^{\infty} \frac{x(\tau)}{t-\tau} d\tau$. O módulo $|z(t)|$ define a envoltória de decaimento contínuo do sinal, representada por:
+	\begin{equation}
+	A(t) = |z(t)| = X_0 e^{-\zeta\omega_n t}
+	\end{equation}
+	Aplicando o logaritmo natural em ambos os lados da equação (11), obtém-se uma relação linear:
+	\begin{equation}
+	\ln(A(t)) = \ln(X_0) - \zeta\omega_n t = \ln(X_0) - 2\pi\zeta f_n t
+	\end{equation}
+	Ajustando uma linha reta por regressão linear por mínimos quadrados no termo $\ln(A(t)) = a t + b$, o coeficiente angular $a$ é igual a $-2\pi\zeta f_n$. Logo, o amortecimento contínuo é determinado por:
+	\begin{equation}
+	\zeta = \frac{-a}{2\pi f_n}
+	\end{equation}
+	
+	% ============================================================
+	% METODOLOGIA
+	% ============================================================
+	\section{Materiais e Metodologia Experimental}
+	
+	A metodologia de ensaios não destrutivos baseou-se na montagem de uma bancada vertical e na integração de múltiplos sensores ópticos e acústicos.
+	
+	\subsection{Percussor e Tubo de Queda}
+	A bancada experimental do PisoVibe consistiu em um tubo de queda livre vertical de acrílico transparente com altura útil de queda regulada entre $h_0 = 525$ e $540$ mm, fixado perpendicularmente ao solo por meio de tripés niveladores. 
+	
+	O percussor selecionado foi uma esfera polimérica rígida (bola de pingue-pongue Vollo Pro 40+, massa $m = 2{,}7$ g, casca fina de plástico ABS), conforme ilustrado na Figura 1. A escolha técnica do ABS em detrimento de esferas de tênis ou elastômeros macios justifica-se pelo alto módulo de elasticidade e baixíssimo amortecimento interno do material do percussor. Isso garante uma zona de contato extremamente rígida com tempo de colisão infinitesimal, aproximando o impacto a um pulso ideal (Delta de Dirac), o que excita com máxima amplitude as frequências flexurais da laje cerâmica.
+	
+	\begin{figure}[htbp]
+		\centering
+		\includegraphics[width=0.7\linewidth]{esfera_percussor.jpg}
+		\caption{Esfera polimérica rígida (Bola de Pingue-Pongue Vollo Pro 40+, $m = 2{,}7\text{ g}$) utilizada para os ensaios de impacto.}
+		\label{fig:esfera_percussor}
+	\end{figure}
+	
+	\subsection{Corpos de Prova e Condições de Ensaio}
+	Os ensaios foram realizados em duas condições de contorno de suporte de placas cerâmicas de dimensões idênticas ($30 \times 30$ cm), representadas na Figura 2:
+	\begin{itemize}[noitemsep]
+		\item \textbf{Placa Cerâmica Íntegra (Piso Saudável):} Assentada de maneira uniforme e sólida com argamassa sobre a base de concreto.
+		\item \textbf{Placa Cerâmica Fraturada (Piso Ruim):} Apresentando trinca transversal visível e com descolamento parcial induzido de argamassa na subsuperfície.
+	\end{itemize}
+	
+	\begin{figure}[htbp]
+		\centering
+		\begin{minipage}{0.48\linewidth}
+			\centering
+			\includegraphics[width=\linewidth]{piso_saudavel.jpg}
+			\caption*{(a) Piso Saudável}
+		\end{minipage}
+		\hfill
+		\begin{minipage}{0.48\linewidth}
+			\centering
+			\includegraphics[width=\linewidth]{piso_ruim.jpg}
+			\caption*{(b) Piso Ruim}
+		\end{minipage}
+		\caption{Condições superficiais dos revestimentos testados: (a) Placa cerâmica íntegra (Piso Saudável); (b) Placa cerâmica fraturada com trinca visível (Piso Ruim).}
+		\label{fig:corpos_prova}
+	\end{figure}
+	
+	Os sensores integrados ao sistema foram:
+	\begin{itemize}[noitemsep]
+		\item \textbf{Sensor Óptico Time-of-Flight (ToF) VL53L0X:} Posicionado no topo do tubo de queda, medindo a distância até a esfera a uma taxa de amostragem de $\approx 33$ Hz.
+		\item \textbf{Microfone do Smartphone:} Posicionado na base do tubo de queda livre, captando o transiente sonoro do impacto a uma taxa de amostragem de $48$ kHz no formato PCM de 32 bits flutuantes.
+	\end{itemize}
+	
+	A interface de controle baseou-se em um servidor web embarcado no microcontrolador ESP32-C3 DevKitM-1 (SuperMini), acessado localmente pelo smartphone via rede Wi-Fi. O software utiliza a \textbf{HTML5 Web Audio API} no navegador do celular para iniciar a gravação do áudio síncrono. Ao final da janela configurada de gravação, os dados cinemáticos de altura obtidos pelo ESP32 são enviados via WebSocket e o navegador consolida ambos os vetores no arquivo `pisovibe\_captura.csv`.
+	
+	% ============================================================
+	% RESULTADOS
+	% ============================================================
+	\section{Resultados e Discussão}
+	
+	Os dados experimentais coletados pelo sistema PisoVibe foram processados no domínio do tempo e da frequência para avaliar a integridade física do revestimento.
+	
+	\subsection{Análise Cinemática e Coeficiente de Restituição ($e$)}
+	O alinhamento temporal entre a trajetória cinemática medida pelo sensor ToF VL53L0X e o sinal acústico revelou sincronismo preciso. Os picos de intensidade de áudio coincidiram exatamente com as coordenadas de deslocamento mínimo (altura $h(t) \to 0$ mm) da esfera de ABS.
+	
+	Como observado no gráfico comparativo da Figura 3, a trajetória temporal do rebote difere significativamente entre as duas peças cerâmicas. No piso saudável ($h_0 \sim 540$ mm), o comportamento elástico da colisão é mantido por múltiplos ciclos de quique, resultando em uma trajetória sustentada. Por outro lado, no piso ruim ($h_0 \sim 525$ mm), o quique é severamente amortecido.
+	
+	A perda repentina de altura no piso ruim decorre da deformação da placa na fratura sob o impacto. A abertura transiente da trinca dissipa grande parte da energia mecânica da esfera rígida na forma de atrito interno nas bordas da fratura, impedindo o ricochete eficiente da esfera.
+	
+	\begin{figure}[htbp]
+		\centering
+		\includegraphics[width=\linewidth]{comparacao_trajetoria.png}
+		\caption{Comparativo da trajetória temporal e altura de rebote da esfera entre o piso saudável e o piso ruim.}
+		\label{fig:comparacao_trajetoria}
+	\end{figure}
+	
+	\subsection{Análise Transiente Acústica e Nível de Sinal}
+	A resposta acústica transiente gerada no impacto da esfera (Figura 4) revela padrões claros de integridade. A pressão sonora radiada do piso saudável mostra um amortecimento suave e uniforme da radiação acústica. 
+	
+	No piso ruim, o transiente de som exibe picos iniciais mais elevados e uma reverberação complexa com ruído de alta frequência. Este ruído transiente decorre do atrito e contato local entre as bordas fissuradas da cerâmica fraturada sob o pulso de excitação mecânica, gerando um ruído de cisalhamento característico (atrito na trinca).
+	
+	\begin{figure}[htbp]
+		\centering
+		\includegraphics[width=\linewidth]{comparacao_som.png}
+		\caption{Comparação da resposta transiente de pressão sonora gerada no impacto da esfera sobre o piso saudável e o piso ruim.}
+		\label{fig:comparacao_som}
+	\end{figure}
+	
+	\subsection{Assinatura Vibracional no Domínio da Frequência (FFT)}
+	A análise espectral do impacto sonoro calculada via FFT (Figura 5) revelou um comportamento físico marcante:
+	\begin{itemize}[noitemsep]
+		\item No \textbf{Piso Saudável}, a frequência natural dominante é registrada em $f_n = 570{,}0$ Hz, representando o modo flexural de vibração da placa cerâmica perfeitamente engastada sobre o substrato de argamassa colante sólida.
+		\item No \textbf{Piso Ruim (Fraturado)}, o pico espectral desloca-se acentuadamente para a alta frequência, registrando uma frequência dominante de **$f_n = 1.880{,}0$ Hz**.
+	\end{itemize}
+	
+	\begin{figure}[htbp]
+		\centering
+		\includegraphics[width=\linewidth]{espectro_fft.png}
+		\caption{Espectro de frequência (FFT) do som de impacto: deslocamento da frequência dominante entre a placa íntegra e a placa fraturada.}
+		\label{fig:espectro_fft}
+	\end{figure}
+	
+	O deslocamento para alta frequência no piso fraturado contraria a intuição inicial de que a presença de danos diminui a frequência natural devido à redução de rigidez global. No entanto, fisicamente, a trinca transversal visível divide a placa cerâmica de $30 \times 30$ cm em fragmentos independentes menores. 
+	
+	Como a frequência natural de uma placa está relacionada com a razão rigidez/massa ($\omega_n = \sqrt{k/m}$), a divisão física reduz drasticamente a massa equivalente ($m$) de cada fragmento participante da vibração local sob o ponto de impacto. Como cada pedaço isolado retém uma rigidez relativa elevada, o termo $\sqrt{k/m}$ cresce de forma acentuada, fazendo com que a assinatura acústica ressoe na frequência fundamental muito mais alta de $1.880{,}0$ Hz.
+	
+	\subsection{Matriz Comparativa de Resultados}
+	Os dados numéricos finais consolidados pelo sistema PisoVibe estão apresentados na Tabela 1. 
+	
+	O fator de amortecimento acústico ($\zeta$) extraído continuamente via Transformada de Hilbert revelou valores muito semelhantes entre os revestimentos ($\zeta = 1{,}14\%$ no saudável vs. $\zeta = 1{,}20\%$ no fraturado). No entanto, o nível acústico RMS mais elevado no piso fraturado revela a presença de atrito seco e energia radiada na trinca, enquanto o amortecimento mecânico se destaca pela perda total do rebote cinemático.
+	
+	\begin{table}[htbp]
+		\centering
+		\caption{Resumo comparativo dos parâmetros cinemáticos, acústicos e dinâmicos obtidos pelo PisoVibe.}
+		\label{tab:resumo_parametros}
+		\resizebox{\columnwidth}{!}{%
+			\begin{tabular}{|l|c|c|p{3.2cm}|}
+				\hline
+				\textbf{Parâmetro Medido / Calculado} & \textbf{Piso Saudável (Íntegro)} & \textbf{Piso Ruim (Fraturado)} & \textbf{Variação / Diagnóstico} \\ \hline
+				Altura Inicial ($h_0$) & $\sim 540\text{ mm}$ & $\sim 525\text{ mm}$ & Condição de soltura padronizada \\ \hline
+				Frequência Dominante ($f_n$) & $570{,}0\text{ Hz}$ & $1.880{,}0\text{ Hz}$ & Deslocamento para alta frequência no piso fraturado \\ \hline
+				Fator de Amortecimento ($\zeta$) & $1{,}14\%$ & $1{,}20\%$ & Dissipação contínua de reverberação \\ \hline
+				Nível Acústico RMS (dBFS) & Menor dispersão & Picos mais elevados & Ruído transiente e atrito nas bordas da trinca \\ \hline
+				Comportamento do Rebote & Mantido & Amortecido & Perda de energia mecânica na fratura \\ \hline
+			\end{tabular}%
+		}
+	\end{table}
+	
+	% ============================================================
+	% CORRELAÇÃO CIVIL
+	% ============================================================
+	\section{Correlação com Métodos Não Destrutivos da Engenharia Civil}
+	
+	A metodologia física implementada no PisoVibe correlaciona-se diretamente com ensaios não destrutivos (END) normatizados e de larga escala utilizados na engenharia de estruturas:
+	
+	\begin{itemize}[noitemsep]
+		\item \textbf{Ensaio de Impact-Echo (ASTM C1383):} Utiliza impacto mecânico transiente e processamento de sinal em frequência para detectar delaminações, fissuras internas e avaliar a espessura de placas de concreto. O PisoVibe atua sob o mesmo princípio físico básico da reflexão de ondas de tensão elástica longitudinais (ondas P).
+		\item \textbf{Ensaio de Integridade de Estacas (PIT - ASTM D5882):} Onde o topo de uma estaca é percutido com um martelo e a resposta vibracional no tempo é registrada por acelerômetros para mapear variações de impedância acústica ($Z = \rho C A$), onde $\rho$ é a massa específica, $A$ é a seção transversal e $C$ é a velocidade de propagação de onda no meio.
+	\end{itemize}
+	
+	Pela física de propagação de ondas em sólidos, a velocidade $C$ da onda mecânica está relacionada com o Módulo de Elasticidade Dinâmico ($E_d$) do concreto ou argamassa por:
+	\begin{equation}
+	C = \sqrt{\frac{E_d}{\rho}}
+	\end{equation}
+	Consequentemente, a variação local de frequência fundamental medida pelo PisoVibe reflete a rigidez local da laje, permitindo estimar variações no módulo de elasticidade dinâmico do substrato de argamassa e traçar correlações empíricas indiretas com a resistência à compressão simples ($f_{ck}$) do contrapiso.
+	
+	% ============================================================
+	% CONCLUSÃO
+	% ============================================================
+	\section{Conclusões e Sugestões para Trabalhos Futuros}
+	
+	O sistema PisoVibe mostrou-se plenamente capaz de substituir o método de auscultação empírico tradicional por um ensaio automatizado, quantitativo e reprodutível. A instrumentação proposta permitiu a aquisição com precisão milimétrica da cinemática de ricochete da esfera rígida, correlacionando-a com a análise acústica em alta resolução do smartphone.
+	
+	A análise física integrada indicou que pisos fraturados apresentam rebotes fortemente amortecidos devido à dissipação de energia na fratura, juntamente com um deslocamento da frequência dominante para a faixa de $1.880{,}0$ Hz devido à subdivisão da placa vibrante em fragmentos menores.
+	
+	Para trabalhos futuros, recomenda-se a validação sistemática do PisoVibe em corpos de prova de concreto com falhas de assentamento induzidas de dimensões conhecidas (bolsões de ar e falta de argamassa controlada). Sugere-se também a implementação de algoritmos de Machine Learning (como Máquinas de Vetores de Suporte ou Redes Neurais Artificiais) executados em Python e integrados à interface web para classificar automaticamente a integridade do piso em tempo real na obra.
+	
+	% ============================================================
+	% REFERÊNCIAS BIBLIOGRÁFICAS
+	% ============================================================
+	\printbibliography[title={Referências}]
+	
+\end{document}
