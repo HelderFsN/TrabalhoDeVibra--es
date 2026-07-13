@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.14)  13 JUL 2026 14:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.14)  13 JUL 2026 14:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -819,77 +819,71 @@ Overfull \hbox (1.0pt too wide) in paragraph at lines 217--218
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 244--245
-[]\T1/ptm/m/n/10 Condição de soltura
- []
-
-
-Underfull \hbox (badness 5622) in paragraph at lines 245--246
-[]\T1/ptm/m/n/10 Deslocamento para alta fre-
- []
-
-
-Underfull \hbox (badness 1831) in paragraph at lines 247--248
-[]\T1/ptm/m/n/10 Ruído tran-siente e atrito nas
- []
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 240.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 255.
+(hyperref)                removing `math shift' on input line 240.
 
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 255.
-
-<comparacao_trajetoria.png, id=130, 1204.5pt x 501.875pt>
-File: comparacao_trajetoria.png Graphic file (type png)
-<use comparacao_trajetoria.png>
-Package pdftex.def Info: comparacao_trajetoria.png  used on input line 264.
-(pdftex.def)             Requested size: 244.69344pt x 101.95076pt.
-<comparacao_som.png, id=131, 1204.5pt x 501.875pt>
-File: comparacao_som.png Graphic file (type png)
-<use comparacao_som.png>
-Package pdftex.def Info: comparacao_som.png  used on input line 276.
-(pdftex.def)             Requested size: 244.69344pt x 101.95076pt.
-[3 <./esfera_percussor.jpg> <./piso_saudavel.jpg> <./piso_ruim.jpg> <./comparac
-ao_trajetoria.png>]
-<espectro_fft.png, id=140, 1204.5pt x 501.875pt>
+<pisosaudavel.pdf, id=130, 397.485pt x 226.8475pt>
+File: pisosaudavel.pdf Graphic file (type pdf)
+<use pisosaudavel.pdf>
+Package pdftex.def Info: pisosaudavel.pdf  used on input line 249.
+(pdftex.def)             Requested size: 239.79851pt x 136.85721pt.
+<pisobaguncado.pdf, id=131, 397.485pt x 226.8475pt>
+File: pisobaguncado.pdf Graphic file (type pdf)
+<use pisobaguncado.pdf>
+Package pdftex.def Info: pisobaguncado.pdf  used on input line 252.
+(pdftex.def)             Requested size: 239.79851pt x 136.85721pt.
+<pulsopisosaudavel.pdf, id=132, 430.60875pt x 272.01625pt>
+File: pulsopisosaudavel.pdf Graphic file (type pdf)
+<use pulsopisosaudavel.pdf>
+Package pdftex.def Info: pulsopisosaudavel.pdf  used on input line 267.
+(pdftex.def)             Requested size: 117.4518pt x 74.19247pt.
+<pulsopisocomdefeito.pdf, id=133, 430.60875pt x 272.01625pt>
+File: pulsopisocomdefeito.pdf Graphic file (type pdf)
+<use pulsopisocomdefeito.pdf>
+Package pdftex.def Info: pulsopisocomdefeito.pdf  used on input line 273.
+(pdftex.def)             Requested size: 117.4518pt x 74.19247pt.
+<espectro_fft.png, id=134, 1204.5pt x 501.875pt>
 File: espectro_fft.png Graphic file (type png)
 <use espectro_fft.png>
-Package pdftex.def Info: espectro_fft.png  used on input line 290.
+Package pdftex.def Info: espectro_fft.png  used on input line 289.
 (pdftex.def)             Requested size: 244.69344pt x 101.95076pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 309--310
+[3 <./esfera_percussor.jpg> <./piso_saudavel.jpg> <./piso_ruim.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 344--345
 []\T1/ptm/m/n/10 A metodolo-gia física im-ple-men-tada no Piso-Vibe
  []
 
 
-Underfull \hbox (badness 1715) in paragraph at lines 309--310
+Underfull \hbox (badness 1715) in paragraph at lines 344--345
 \T1/ptm/m/n/10 correlaciona-se di-re-ta-mente com en-saios não de-stru-tivos
  []
 
-
-Underfull \hbox (badness 1168) in paragraph at lines 313--314
+[4 <./pisosaudavel.pdf> <./pisobaguncado.pdf> <./pulsopisosaudavel.pdf> <./puls
+opisocomdefeito.pdf> <./espectro_fft.png>]
+Underfull \hbox (badness 1168) in paragraph at lines 348--349
 []\T1/ptm/b/n/10 Ensaio de In-te-gri-dade de Es-ta-cas (PIT - ASTM
  []
 
-[4 <./comparacao_som.png> <./espectro_fft.png>]
-Underfull \hbox (badness 1360) in paragraph at lines 319--321
+
+Underfull \hbox (badness 1360) in paragraph at lines 354--356
 \T1/ptm/m/n/10 men-tal me-dida pelo Piso-Vibe re-flete a rigidez lo-cal da
  []
 
 
-Underfull \hbox (badness 1062) in paragraph at lines 327--328
+Underfull \hbox (badness 1062) in paragraph at lines 362--363
 \T1/ptm/m/n/10 mil-imétrica da cin-emática de ric-o-chete da es-fera rígida,
  []
 
 
 Package biblatex Warning: No driver for 'standard'.
-(biblatex)                Using fallback driver on input line 336.
+(biblatex)                Using fallback driver on input line 371.
 
 
 Package biblatex Warning: No driver for 'standard'.
-(biblatex)                Using fallback driver on input line 336.
+(biblatex)                Using fallback driver on input line 371.
 
 [5] 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
@@ -905,10 +899,10 @@ Package logreq Info: Writing requests to 'trabalho.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 20463 strings out of 467870
- 351402 string characters out of 5435189
- 1208948 words of memory out of 5000000
- 49057 multiletter control sequences out of 15000+600000
+ 20478 strings out of 467870
+ 351850 string characters out of 5435189
+ 1209147 words of memory out of 5000000
+ 49071 multiletter control sequences out of 15000+600000
  660039 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,13n,79p,1445b,1370s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -922,9 +916,9 @@ MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/MiKTeX/fonts/type1/public/
 amsfonts/cm/cmsy7.pfb><D:/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><D:/M
 iKTeX/fonts/type1/urw/times/utmb8a.pfb><D:/MiKTeX/fonts/type1/urw/times/utmr8a.
 pfb><D:/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on trabalho.pdf (5 pages, 10823500 bytes).
+Output written on trabalho.pdf (5 pages, 11108437 bytes).
 PDF statistics:
- 249 PDF objects out of 1000 (max. 8388607)
- 55 named destinations out of 1000 (max. 500000)
- 180 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 304 PDF objects out of 1000 (max. 8388607)
+ 56 named destinations out of 1000 (max. 500000)
+ 190 words of extra memory for PDF output out of 10000 (max. 10000000)
 
