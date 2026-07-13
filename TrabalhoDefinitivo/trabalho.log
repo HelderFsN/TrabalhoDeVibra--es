@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.14)  13 JUL 2026 12:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.14)  13 JUL 2026 13:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -8,7 +8,16 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2025-11-06>
 (D:\MiKTeX\tex/latex/base\article.cls
 Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
-(D:\MiKTeX\tex/latex/base\size10.clo
+(D:\MiKTeX\tex/latex/base\fleqn.clo
+File: fleqn.clo 2016/12/29 v1.2b Standard LaTeX option (flush left equations)
+\mathindent=\skip49
+Applying: [2015/01/01] Make \[ robust on input line 50.
+LaTeX Info: Redefining \[ on input line 51.
+Already applied: [0000/00/00] Make \[ robust on input line 62.
+Applying: [2015/01/01] Make \] robust on input line 74.
+LaTeX Info: Redefining \] on input line 75.
+Already applied: [0000/00/00] Make \] robust on input line 83.
+) (D:\MiKTeX\tex/latex/base\size10.clo
 File: size10.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count275
@@ -19,8 +28,8 @@ File: size10.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 \c@subparagraph=\count280
 \c@figure=\count281
 \c@table=\count282
-\abovecaptionskip=\skip49
-\belowcaptionskip=\skip50
+\abovecaptionskip=\skip50
+\belowcaptionskip=\skip51
 \bibindent=\dimen148
 )
 (D:\MiKTeX\tex/latex/geometry\geometry.sty
@@ -64,7 +73,7 @@ Package: inputenc 2024/02/08 v1.3d Input encoding file
 )
 (D:\MiKTeX\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2025/07/09 v2.17z AMS math features
-\@mathmargin=\skip51
+\@mathmargin=\skip52
 
 For additional information on amsmath, use the `?' option.
 (D:\MiKTeX\tex/latex/amsmath\amstext.sty
@@ -124,8 +133,8 @@ LaTeX Info: Redefining \Relbar on input line 970.
 \totwidth@=\dimen164
 \lineht@=\dimen165
 \@envbody=\toks24
-\multlinegap=\skip52
-\multlinetaggap=\skip53
+\multlinegap=\skip53
+\multlinetaggap=\skip54
 \mathdisplay@stack=\toks25
 LaTeX Info: Redefining \[ on input line 2950.
 LaTeX Info: Redefining \] on input line 2951.
@@ -182,8 +191,8 @@ Package caption Info: Standard document class detected.
 (D:\MiKTeX\tex/latex/titlesec\titlesec.sty
 Package: titlesec 2025/01/04 v2.17 Sectioning titles
 \ttl@box=\box55
-\beforetitleunit=\skip54
-\aftertitleunit=\skip55
+\beforetitleunit=\skip55
+\aftertitleunit=\skip56
 \ttl@plus=\dimen176
 \ttl@minus=\dimen177
 \ttl@toksa=\toks26
@@ -194,20 +203,20 @@ Package: titlesec 2025/01/04 v2.17 Sectioning titles
 (D:\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
 Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 
-\f@nch@headwidth=\skip56
-\f@nch@offset@elh=\skip57
-\f@nch@offset@erh=\skip58
-\f@nch@offset@olh=\skip59
-\f@nch@offset@orh=\skip60
-\f@nch@offset@elf=\skip61
-\f@nch@offset@erf=\skip62
-\f@nch@offset@olf=\skip63
-\f@nch@offset@orf=\skip64
-\f@nch@height=\skip65
-\f@nch@footalignment=\skip66
-\f@nch@widthL=\skip67
-\f@nch@widthC=\skip68
-\f@nch@widthR=\skip69
+\f@nch@headwidth=\skip57
+\f@nch@offset@elh=\skip58
+\f@nch@offset@erh=\skip59
+\f@nch@offset@olh=\skip60
+\f@nch@offset@orh=\skip61
+\f@nch@offset@elf=\skip62
+\f@nch@offset@erf=\skip63
+\f@nch@offset@olf=\skip64
+\f@nch@offset@orf=\skip65
+\f@nch@height=\skip66
+\f@nch@footalignment=\skip67
+\f@nch@widthL=\skip68
+\f@nch@widthC=\skip69
+\f@nch@widthR=\skip70
 \@temptokenb=\toks27
 )
 (D:\MiKTeX\tex/latex/lastpage\lastpage.sty
@@ -223,7 +232,7 @@ Package: lastpagemodern 2025-08-14 v2.1h Refers to last page's name (HMM; JPG)
 ) 
 )) (D:\MiKTeX\tex/latex/enumitem\enumitem.sty
 Package: enumitem 2025/02/06 v3.11 Customized lists
-\labelindent=\skip70
+\labelindent=\skip71
 \enit@outerparindent=\dimen181
 \enit@toks=\toks28
 \enit@inbox=\box56
@@ -352,12 +361,12 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 84.
 )
-\Hy@SectionHShift=\skip71
+\Hy@SectionHShift=\skip72
 )
 (D:\MiKTeX\tex/latex/tools\indentfirst.sty
 Package: indentfirst 2023/07/02 v1.03 Indent first paragraph (DPC)
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 20.
+Package hyperref Info: Option `colorlinks' set `true' on input line 25.
 
 (D:\MiKTeX\tex/latex/biblatex\biblatex.sty
 Package: biblatex 2025/07/10 v3.21 programmable bibliographies (PK/MW)
@@ -413,14 +422,14 @@ Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
 \blx@sectionciteorderinternal@0=\count356
 \blx@entrysetcounter=\count357
 \blx@biblioinstance=\count358
-\labelnumberwidth=\skip72
-\labelalphawidth=\skip73
-\biblabelsep=\skip74
-\bibitemsep=\skip75
-\bibnamesep=\skip76
-\bibinitsep=\skip77
-\bibparsep=\skip78
-\bibhang=\skip79
+\labelnumberwidth=\skip73
+\labelalphawidth=\skip74
+\biblabelsep=\skip75
+\bibitemsep=\skip76
+\bibnamesep=\skip77
+\bibinitsep=\skip78
+\bibparsep=\skip79
+\bibhang=\skip80
 \blx@bcfin=\read2
 \blx@bcfout=\write3
 \blx@langwohyphens=\language79
@@ -504,20 +513,20 @@ Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \c@savedoriglanguage=\count427
 \c@pageref=\count428
 \c@savedpageref=\count429
-\shorthandwidth=\skip80
-\shortjournalwidth=\skip81
-\shortserieswidth=\skip82
-\shorttitlewidth=\skip83
-\shortauthorwidth=\skip84
-\shorteditorwidth=\skip85
-\locallabelnumberwidth=\skip86
-\locallabelalphawidth=\skip87
-\localshorthandwidth=\skip88
-\localshortjournalwidth=\skip89
-\localshortserieswidth=\skip90
-\localshorttitlewidth=\skip91
-\localshortauthorwidth=\skip92
-\localshorteditorwidth=\skip93
+\shorthandwidth=\skip81
+\shortjournalwidth=\skip82
+\shortserieswidth=\skip83
+\shorttitlewidth=\skip84
+\shortauthorwidth=\skip85
+\shorteditorwidth=\skip86
+\locallabelnumberwidth=\skip87
+\locallabelalphawidth=\skip88
+\localshorthandwidth=\skip89
+\localshortjournalwidth=\skip90
+\localshortserieswidth=\skip91
+\localshorttitlewidth=\skip92
+\localshortauthorwidth=\skip93
+\localshorteditorwidth=\skip94
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
  (D:\MiKTeX\tex/latex/biblatex\blx-compat.def
@@ -604,24 +613,24 @@ Package: blx-case-expl3 2025/07/10 v3.21 expl3 case changing code for biblatex
  (trabalho.aux)
 \openout1 = `trabalho.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -691,7 +700,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 Package color Info: Driver file: pdftex.def on input line 149.
 
 (D:\MiKTeX\tex/latex/graphics\mathcolor.ltx))
-Package hyperref Info: Link coloring ON on input line 57.
+Package hyperref Info: Link coloring ON on input line 62.
  (trabalho.out) (trabalho.out)
 \@outlinefile=\write4
 \openout4 = `trabalho.out'.
@@ -710,166 +719,197 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'trabalho.bbl' found.
  (trabalho.bbl)
-Package biblatex Info: Reference section=0 on input line 57.
-Package biblatex Info: Reference segment=0 on input line 57.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 73.
+Package biblatex Info: Reference section=0 on input line 62.
+Package biblatex Info: Reference segment=0 on input line 62.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 78.
 
 
 (D:\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 73.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 78.
 
  (D:\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 95.
+(hyperref)                removing `math shift' on input line 100.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 95.
+(hyperref)                removing `math shift' on input line 100.
 
 [1{C:/Users/hfsan/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{D:/MiKTeX/f
 onts/enc/dvips/base/8r.enc}
 
 
 ]
-Underfull \hbox (badness 1062) in paragraph at lines 132--132
+Underfull \hbox (badness 1062) in paragraph at lines 137--137
 |[]\T1/ptm/m/it/10 Processamento de Sinais no Domínio da Fre-quên-cia
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 137.
+(hyperref)                removing `math shift' on input line 142.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\zeta' on input line 137.
+(hyperref)                removing `\zeta' on input line 142.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 137.
+(hyperref)                removing `math shift' on input line 142.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 140.
+(hyperref)                removing `math shift' on input line 145.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\delta' on input line 140.
+(hyperref)                removing `\delta' on input line 145.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 140.
+(hyperref)                removing `math shift' on input line 145.
 
 <esfera_percussor.jpg, id=97, 4095.3pt x 3071.475pt>
 File: esfera_percussor.jpg Graphic file (type jpg)
 <use esfera_percussor.jpg>
-Package pdftex.def Info: esfera_percussor.jpg  used on input line 182.
+Package pdftex.def Info: esfera_percussor.jpg  used on input line 187.
 (pdftex.def)             Requested size: 171.28465pt x 128.4621pt.
+[2 <./esfera_percussor.jpg>]
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 1
-90.
-(D:\MiKTeX\tex/latex/psnfss\ts1ptm.fd
+95.
+ (D:\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-) [2 <./esfera_percussor.jpg>]
+)
 <piso_saudavel.jpg, id=116, 4111.36pt x 3083.52pt>
 File: piso_saudavel.jpg Graphic file (type jpg)
 <use piso_saudavel.jpg>
-Package pdftex.def Info: piso_saudavel.jpg  used on input line 198.
+Package pdftex.def Info: piso_saudavel.jpg  used on input line 203.
 (pdftex.def)             Requested size: 117.4518pt x 88.07884pt.
+
+Overfull \hbox (1.0pt too wide) in paragraph at lines 203--204
+ [][] 
+ []
+
 <piso_ruim.jpg, id=117, 4111.36pt x 3083.52pt>
 File: piso_ruim.jpg Graphic file (type jpg)
 <use piso_ruim.jpg>
-Package pdftex.def Info: piso_ruim.jpg  used on input line 204.
+Package pdftex.def Info: piso_ruim.jpg  used on input line 209.
 (pdftex.def)             Requested size: 117.4518pt x 88.07884pt.
 
+Overfull \hbox (1.0pt too wide) in paragraph at lines 209--210
+ [][] 
+ []
+
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 226.
+(hyperref)                removing `math shift' on input line 231.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 226.
+(hyperref)                removing `math shift' on input line 231.
 
 <comparacao_trajetoria.png, id=118, 1204.5pt x 501.875pt>
 File: comparacao_trajetoria.png Graphic file (type png)
 <use comparacao_trajetoria.png>
-Package pdftex.def Info: comparacao_trajetoria.png  used on input line 235.
+Package pdftex.def Info: comparacao_trajetoria.png  used on input line 240.
 (pdftex.def)             Requested size: 244.69344pt x 101.95076pt.
+
+Overfull \hbox (1.0pt too wide) in paragraph at lines 240--241
+ [][] 
+ []
+
 <comparacao_som.png, id=119, 1204.5pt x 501.875pt>
 File: comparacao_som.png Graphic file (type png)
 <use comparacao_som.png>
-Package pdftex.def Info: comparacao_som.png  used on input line 247.
+Package pdftex.def Info: comparacao_som.png  used on input line 252.
 (pdftex.def)             Requested size: 244.69344pt x 101.95076pt.
-<espectro_fft.png, id=120, 1204.5pt x 501.875pt>
-File: espectro_fft.png Graphic file (type png)
-<use espectro_fft.png>
-Package pdftex.def Info: espectro_fft.png  used on input line 261.
-(pdftex.def)             Requested size: 244.69344pt x 101.95076pt.
+
+Overfull \hbox (1.0pt too wide) in paragraph at lines 252--253
+ [][] 
+ []
+
 [3 <./piso_saudavel.jpg> <./piso_ruim.jpg> <./comparacao_trajetoria.png> <./com
 paracao_som.png>]
-Underfull \hbox (badness 1577) in paragraph at lines 289--289
+<espectro_fft.png, id=127, 1204.5pt x 501.875pt>
+File: espectro_fft.png Graphic file (type png)
+<use espectro_fft.png>
+Package pdftex.def Info: espectro_fft.png  used on input line 266.
+(pdftex.def)             Requested size: 244.69344pt x 101.95076pt.
+
+Overfull \hbox (1.0pt too wide) in paragraph at lines 266--267
+ [][] 
+ []
+
+
+Underfull \hbox (badness 1577) in paragraph at lines 295--295
 []\T1/ptm/b/n/10 Variação / Di-ag-nós-
  []
 
 
-Underfull \hbox (badness 4995) in paragraph at lines 289--289
+Underfull \hbox (badness 4995) in paragraph at lines 295--295
 []\T1/ptm/m/n/10 Condição de soltura
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 289--289
+Underfull \hbox (badness 10000) in paragraph at lines 295--295
 []\T1/ptm/m/n/10 Deslocamento para
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 289--289
+Underfull \hbox (badness 10000) in paragraph at lines 295--295
 []\T1/ptm/m/n/10 Dissipação con-tínua
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 289--289
+Underfull \hbox (badness 10000) in paragraph at lines 295--295
 []\T1/ptm/m/n/10 Ruído tran-siente e
  []
 
 
-Underfull \hbox (badness 2409) in paragraph at lines 289--289
+Underfull \hbox (badness 2409) in paragraph at lines 295--295
 \T1/ptm/m/n/10 atrito nas bor-das da
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 289--289
+Underfull \hbox (badness 10000) in paragraph at lines 295--295
 []\T1/ptm/m/n/10 Perda de en-er-gia
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 297--298
+Underfull \hbox (badness 10000) in paragraph at lines 303--304
 []\T1/ptm/m/n/10 A metodolo-gia física im-ple-men-tada no Piso-Vibe
  []
 
 
-Underfull \hbox (badness 1715) in paragraph at lines 297--298
+Underfull \hbox (badness 1715) in paragraph at lines 303--304
 \T1/ptm/m/n/10 correlaciona-se di-re-ta-mente com en-saios não de-stru-tivos
  []
 
 
-Underfull \hbox (badness 1168) in paragraph at lines 301--302
+Underfull \vbox (badness 2065) has occurred while \output is active []
+
+
+Underfull \hbox (badness 1168) in paragraph at lines 307--308
 []\T1/ptm/b/n/10 Ensaio de In-te-gri-dade de Es-ta-cas (PIT - ASTM
  []
 
 
-Underfull \hbox (badness 1360) in paragraph at lines 307--309
+Underfull \hbox (badness 1360) in paragraph at lines 313--315
 \T1/ptm/m/n/10 men-tal me-dida pelo Piso-Vibe re-flete a rigidez lo-cal da
  []
 
 
-Underfull \hbox (badness 1062) in paragraph at lines 315--316
+Underfull \hbox (badness 1062) in paragraph at lines 321--322
 \T1/ptm/m/n/10 mil-imétrica da cin-emática de ric-o-chete da es-fera rígida,
  []
 
-[4 <./espectro_fft.png>]
+[4 <./espectro_fft.png>] [5
+
+]
 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
 (trabalho.aux)
@@ -884,13 +924,13 @@ Package logreq Info: Writing requests to 'trabalho.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 20334 strings out of 467870
- 348174 string characters out of 5435189
- 1206399 words of memory out of 5000000
- 48946 multiletter control sequences out of 15000+600000
+ 20344 strings out of 467870
+ 348346 string characters out of 5435189
+ 1206488 words of memory out of 5000000
+ 48952 multiletter control sequences out of 15000+600000
  660039 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,13n,79p,1445b,1372s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,13n,79p,1445b,1408s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <D:/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:/MiKTeX/fonts/type1/p
 ublic/amsfonts/cm/cmmi10.pfb><D:/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pf
 b><D:/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><D:/MiKTeX/fonts/type1/pu
@@ -901,9 +941,9 @@ MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/MiKTeX/fonts/type1/public/
 amsfonts/cm/cmsy7.pfb><D:/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><D:/M
 iKTeX/fonts/type1/urw/times/utmb8a.pfb><D:/MiKTeX/fonts/type1/urw/times/utmr8a.
 pfb><D:/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on trabalho.pdf (4 pages, 10738495 bytes).
+Output written on trabalho.pdf (5 pages, 10739749 bytes).
 PDF statistics:
- 211 PDF objects out of 1000 (max. 8388607)
- 44 named destinations out of 1000 (max. 500000)
+ 215 PDF objects out of 1000 (max. 8388607)
+ 45 named destinations out of 1000 (max. 500000)
  175 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,4 +1,4 @@
-\documentclass[10pt,twocolumn]{article}
+\documentclass[10pt,twocolumn,fleqn]{article}
 
 % ============================================================
 % PACOTES
@@ -16,6 +16,11 @@
 \usepackage{enumitem}
 \usepackage{hyperref}
 \usepackage{indentfirst}
+
+% ---------- Configurações de Formatação ----------
+\setlength{\mathindent}{1.5em} % Alinhamento das equações à esquerda com indentação
+\setlength{\fboxsep}{0pt}       % Borda colada à imagem
+\setlength{\fboxrule}{0.5pt}    % Espessura da borda preta
 
 \hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue}
 
@@ -179,7 +184,7 @@ backrefstyle=three,
 	
 	\begin{figure}[htbp]
 		\centering
-		\includegraphics[width=0.7\linewidth]{esfera_percussor.jpg}
+		\fbox{\includegraphics[width=0.7\linewidth]{esfera_percussor.jpg}}
 		\caption{Esfera polimérica rígida (Bola de Pingue-Pongue Vollo Pro 40+, $m = 2{,}7\text{ g}$) utilizada para os ensaios de impacto.}
 		\label{fig:esfera_percussor}
 	\end{figure}
@@ -195,13 +200,13 @@ backrefstyle=three,
 		\centering
 		\begin{minipage}{0.48\linewidth}
 			\centering
-			\includegraphics[width=\linewidth]{piso_saudavel.jpg}
+			\fbox{\includegraphics[width=\linewidth]{piso_saudavel.jpg}}
 			\caption*{(a) Piso Saudável}
 		\end{minipage}
 		\hfill
 		\begin{minipage}{0.48\linewidth}
 			\centering
-			\includegraphics[width=\linewidth]{piso_ruim.jpg}
+			\fbox{\includegraphics[width=\linewidth]{piso_ruim.jpg}}
 			\caption*{(b) Piso Ruim}
 		\end{minipage}
 		\caption{Condições superficiais dos revestimentos testados: (a) Placa cerâmica íntegra (Piso Saudável); (b) Placa cerâmica fraturada com trinca visível (Piso Ruim).}
@@ -232,7 +237,7 @@ backrefstyle=three,
 	
 	\begin{figure}[htbp]
 		\centering
-		\includegraphics[width=\linewidth]{comparacao_trajetoria.png}
+		\fbox{\includegraphics[width=\linewidth]{comparacao_trajetoria.png}}
 		\caption{Comparativo da trajetória temporal e altura de rebote da esfera entre o piso saudável e o piso ruim.}
 		\label{fig:comparacao_trajetoria}
 	\end{figure}
@@ -244,7 +249,7 @@ backrefstyle=three,
 	
 	\begin{figure}[htbp]
 		\centering
-		\includegraphics[width=\linewidth]{comparacao_som.png}
+		\fbox{\includegraphics[width=\linewidth]{comparacao_som.png}}
 		\caption{Comparação da resposta transiente de pressão sonora gerada no impacto da esfera sobre o piso saudável e o piso ruim.}
 		\label{fig:comparacao_som}
 	\end{figure}
@@ -258,7 +263,7 @@ backrefstyle=three,
 	
 	\begin{figure}[htbp]
 		\centering
-		\includegraphics[width=\linewidth]{espectro_fft.png}
+		\fbox{\includegraphics[width=\linewidth]{espectro_fft.png}}
 		\caption{Espectro de frequência (FFT) do som de impacto: deslocamento da frequência dominante entre a placa íntegra e a placa fraturada.}
 		\label{fig:espectro_fft}
 	\end{figure}
@@ -272,19 +277,20 @@ backrefstyle=three,
 	
 	O fator de amortecimento acústico ($\zeta$) extraído continuamente via Transformada de Hilbert revelou valores muito semelhantes entre os revestimentos ($\zeta = 1{,}14\%$ no saudável vs. $\zeta = 1{,}20\%$ no fraturado). No entanto, o nível acústico RMS mais elevado no piso fraturado revela a presença de atrito seco e energia radiada na trinca, enquanto o amortecimento mecânico se destaca pela perda total do rebote cinemático.
 	
-	\begin{table}[htbp]
+	\begin{table}[!h]
 		\centering
-		\caption{Resumo comparativo dos parâmetros cinemáticos, acústicos e dinâmicos obtidos pelo PisoVibe.}
+		\caption{\textbf{Resumo comparativo dos parâmetros cinemáticos, acústicos e dinâmicos obtidos pelo PisoVibe.}}
 		\label{tab:resumo_parametros}
 		\resizebox{\columnwidth}{!}{%
-			\begin{tabular}{|l|c|c|p{3.2cm}|}
+			\begin{tabular}{l|c|c|p{3.2cm}}
 				\hline
 				\textbf{Parâmetro Medido / Calculado} & \textbf{Piso Saudável (Íntegro)} & \textbf{Piso Ruim (Fraturado)} & \textbf{Variação / Diagnóstico} \\ \hline
-				Altura Inicial ($h_0$) & $\sim 540\text{ mm}$ & $\sim 525\text{ mm}$ & Condição de soltura padronizada \\ \hline
-				Frequência Dominante ($f_n$) & $570{,}0\text{ Hz}$ & $1.880{,}0\text{ Hz}$ & Deslocamento para alta frequência no piso fraturado \\ \hline
-				Fator de Amortecimento ($\zeta$) & $1{,}14\%$ & $1{,}20\%$ & Dissipação contínua de reverberação \\ \hline
-				Nível Acústico RMS (dBFS) & Menor dispersão & Picos mais elevados & Ruído transiente e atrito nas bordas da trinca \\ \hline
-				Comportamento do Rebote & Mantido & Amortecido & Perda de energia mecânica na fratura \\ \hline
+				Altura Inicial ($h_0$) & $\sim 540\text{ mm}$ & $\sim 525\text{ mm}$ & Condição de soltura padronizada \\
+				Frequência Dominante ($f_n$) & $570{,}0\text{ Hz}$ & $1.880{,}0\text{ Hz}$ & Deslocamento para alta frequência no piso fraturado \\
+				Fator de Amortecimento ($\zeta$) & $1{,}14\%$ & $1{,}20\%$ & Dissipação contínua de reverberação \\
+				Nível Acústico RMS (dBFS) & Menor dispersão & Picos mais elevados & Ruído transiente e atrito nas bordas da trinca \\
+				Comportamento do Rebote & Mantido & Amortecido & Perda de energia mecânica na fratura \\
+				\hline
 			\end{tabular}%
 		}
 	\end{table}
