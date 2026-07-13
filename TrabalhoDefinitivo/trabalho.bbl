@@ -19,37 +19,401 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global/global}
-    \entry{rao1995mechanical}{book}{}{}
-      \name{author}{2}{}{%
+    \entry{rao2008vibracoes}{book}{}{}
+      \name{author}{1}{}{%
         {{hash=bc8e9a4de974090b1914093e719a785a}{%
            family={Rao},
            familyi={R\bibinitperiod},
-           given={Singiresu\bibnamedelima S},
+           given={Singiresu\bibnamedelima S.},
            giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
-        {{hash=dc2579085ed8bf119a0da5bbec016822}{%
-           family={Yap},
-           familyi={Y\bibinitperiod},
-           given={Fook\bibnamedelima Fah},
-           giveni={F\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {São Paulo}%
       }
       \list{publisher}{1}{%
-        {Addison-Wesley New York}%
+        {Pearson Prentice Hall}%
       }
-      \strng{namehash}{96a0e02cb745f62860014440abcfa57b}
-      \strng{fullhash}{96a0e02cb745f62860014440abcfa57b}
-      \strng{fullhashraw}{96a0e02cb745f62860014440abcfa57b}
-      \strng{bibnamehash}{96a0e02cb745f62860014440abcfa57b}
-      \strng{authorbibnamehash}{96a0e02cb745f62860014440abcfa57b}
-      \strng{authornamehash}{96a0e02cb745f62860014440abcfa57b}
-      \strng{authorfullhash}{96a0e02cb745f62860014440abcfa57b}
-      \strng{authorfullhashraw}{96a0e02cb745f62860014440abcfa57b}
+      \strng{namehash}{bc8e9a4de974090b1914093e719a785a}
+      \strng{fullhash}{bc8e9a4de974090b1914093e719a785a}
+      \strng{fullhashraw}{bc8e9a4de974090b1914093e719a785a}
+      \strng{bibnamehash}{bc8e9a4de974090b1914093e719a785a}
+      \strng{authorbibnamehash}{bc8e9a4de974090b1914093e719a785a}
+      \strng{authornamehash}{bc8e9a4de974090b1914093e719a785a}
+      \strng{authorfullhash}{bc8e9a4de974090b1914093e719a785a}
+      \strng{authorfullhashraw}{bc8e9a4de974090b1914093e719a785a}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Mechanical vibrations}
-      \field{volume}{4}
-      \field{year}{1995}
+      \field{edition}{4}
+      \field{title}{Vibrações Mecânicas}
+      \field{year}{2008}
+    \endentry
+    \entry{thomson2008teoria}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=11e7a1258c0285f7172244d8aba20b58}{%
+           family={Thomson},
+           familyi={T\bibinitperiod},
+           given={William\bibnamedelima T.},
+           giveni={W\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=b1a4f8b197c0bf95b2abb7b6d5acdee1}{%
+           family={Dahleh},
+           familyi={D\bibinitperiod},
+           given={Marie\bibnamedelima Dillon},
+           giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Rio de Janeiro}%
+      }
+      \list{publisher}{1}{%
+        {LTC}%
+      }
+      \strng{namehash}{1ff90492655272499a7d34a7b96afc0e}
+      \strng{fullhash}{1ff90492655272499a7d34a7b96afc0e}
+      \strng{fullhashraw}{1ff90492655272499a7d34a7b96afc0e}
+      \strng{bibnamehash}{1ff90492655272499a7d34a7b96afc0e}
+      \strng{authorbibnamehash}{1ff90492655272499a7d34a7b96afc0e}
+      \strng{authornamehash}{1ff90492655272499a7d34a7b96afc0e}
+      \strng{authorfullhash}{1ff90492655272499a7d34a7b96afc0e}
+      \strng{authorfullhashraw}{1ff90492655272499a7d34a7b96afc0e}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{5}
+      \field{title}{Teoria da Vibração com Aplicações}
+      \field{year}{2008}
+    \endentry
+    \entry{oppenheim2012processamento}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=3d2d1d8687de3baa625d3d62a7e0e464}{%
+           family={Oppenheim},
+           familyi={O\bibinitperiod},
+           given={Alan\bibnamedelima V.},
+           giveni={A\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=fd563e605c810572cece256b4271abd4}{%
+           family={Schafer},
+           familyi={S\bibinitperiod},
+           given={Ronald\bibnamedelima W.},
+           giveni={R\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {São Paulo}%
+      }
+      \list{publisher}{1}{%
+        {Pearson Education do Brasil}%
+      }
+      \strng{namehash}{6b65fefc61ef07dfae5fcb9291d4aceb}
+      \strng{fullhash}{6b65fefc61ef07dfae5fcb9291d4aceb}
+      \strng{fullhashraw}{6b65fefc61ef07dfae5fcb9291d4aceb}
+      \strng{bibnamehash}{6b65fefc61ef07dfae5fcb9291d4aceb}
+      \strng{authorbibnamehash}{6b65fefc61ef07dfae5fcb9291d4aceb}
+      \strng{authornamehash}{6b65fefc61ef07dfae5fcb9291d4aceb}
+      \strng{authorfullhash}{6b65fefc61ef07dfae5fcb9291d4aceb}
+      \strng{authorfullhashraw}{6b65fefc61ef07dfae5fcb9291d4aceb}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{3}
+      \field{title}{Processamento em Tempo Discreto de Sinais}
+      \field{year}{2012}
+    \endentry
+    \entry{feldman2011hilbert}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=244c96635798701847a1e6c990863733}{%
+           family={Feldman},
+           familyi={F\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Chichester}%
+      }
+      \list{publisher}{1}{%
+        {John Wiley \& Sons}%
+      }
+      \strng{namehash}{244c96635798701847a1e6c990863733}
+      \strng{fullhash}{244c96635798701847a1e6c990863733}
+      \strng{fullhashraw}{244c96635798701847a1e6c990863733}
+      \strng{bibnamehash}{244c96635798701847a1e6c990863733}
+      \strng{authorbibnamehash}{244c96635798701847a1e6c990863733}
+      \strng{authornamehash}{244c96635798701847a1e6c990863733}
+      \strng{authorfullhash}{244c96635798701847a1e6c990863733}
+      \strng{authorfullhashraw}{244c96635798701847a1e6c990863733}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Hilbert Transform Applications in Mechanical Vibration}
+      \field{year}{2011}
+    \endentry
+    \entry{huang1998empirical}{article}{}{}
+      \name{author}{9}{}{%
+        {{hash=6a47618563c9ad3239d1bb9cb5208778}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Norden\bibnamedelima E.},
+           giveni={N\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=fa9a5ae7001bbfe887613744eabf475f}{%
+           family={Shen},
+           familyi={S\bibinitperiod},
+           given={Z.},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=144740c271d696ddf46afd7df67d72df}{%
+           family={Long},
+           familyi={L\bibinitperiod},
+           given={S.\bibnamedelimi R.},
+           giveni={S\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=df4b6e3f0bc8d479119f76c9e15d9d47}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={M.\bibnamedelimi C.},
+           giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=3e8b08e8d36dc4fa41dd63571e221e59}{%
+           family={Shih},
+           familyi={S\bibinitperiod},
+           given={H.\bibnamedelimi H.},
+           giveni={H\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=899ac7a9f739b498b88ad368e8ece008}{%
+           family={Zheng},
+           familyi={Z\bibinitperiod},
+           given={Q.},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=f55bd2ef17158c918cc47b6dae045a37}{%
+           family={Yen},
+           familyi={Y\bibinitperiod},
+           given={N.-C.},
+           giveni={N\bibinithyphendelim C\bibinitperiod}}}%
+        {{hash=16aebe2df8f3d14d03122206d95f5f79}{%
+           family={Chao},
+           familyi={C\bibinitperiod},
+           given={C.\bibnamedelimi C.},
+           giveni={C\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=2ac0aa105c1ffec3c5eb63dd52c73113}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={H.\bibnamedelimi H.},
+           giveni={H\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{4f5f36b519a9cf55d0929d5d53c91e51}
+      \strng{fullhash}{69ac1f4a4f3cdd7792eba6de78fed728}
+      \strng{fullhashraw}{69ac1f4a4f3cdd7792eba6de78fed728}
+      \strng{bibnamehash}{69ac1f4a4f3cdd7792eba6de78fed728}
+      \strng{authorbibnamehash}{69ac1f4a4f3cdd7792eba6de78fed728}
+      \strng{authornamehash}{4f5f36b519a9cf55d0929d5d53c91e51}
+      \strng{authorfullhash}{69ac1f4a4f3cdd7792eba6de78fed728}
+      \strng{authorfullhashraw}{69ac1f4a4f3cdd7792eba6de78fed728}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the Royal Society of London. Series A: Mathematical, Physical and Engineering Sciences}
+      \field{number}{1971}
+      \field{title}{The empirical mode decomposition and the Hilbert spectrum for nonlinear and non-stationary time series analysis}
+      \field{volume}{454}
+      \field{year}{1998}
+      \field{pages}{903\bibrangedash 995}
+      \range{pages}{93}
+    \endentry
+    \entry{virtanen2020scipy}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{11}{}{%
+        {{hash=18703a2bb6a62484483c193a212da2f8}{%
+           family={Virtanen},
+           familyi={V\bibinitperiod},
+           given={Pauli},
+           giveni={P\bibinitperiod}}}%
+        {{hash=646fbfe08374cc41c2f9bd971d8c4725}{%
+           family={Gommers},
+           familyi={G\bibinitperiod},
+           given={Ralf},
+           giveni={R\bibinitperiod}}}%
+        {{hash=d500f4849030f34359cdb3e1513acf83}{%
+           family={Oliphant},
+           familyi={O\bibinitperiod},
+           given={Travis\bibnamedelima E.},
+           giveni={T\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=35bb9c71f55048509a3e9018c349ed73}{%
+           family={Haberland},
+           familyi={H\bibinitperiod},
+           given={Matt},
+           giveni={M\bibinitperiod}}}%
+        {{hash=fbb0c40f5d70be8ce47ce9daafdf5749}{%
+           family={Reddy},
+           familyi={R\bibinitperiod},
+           given={Tyler},
+           giveni={T\bibinitperiod}}}%
+        {{hash=9fd9ed8466bbb96364ae008f2a665e6e}{%
+           family={Cournapeau},
+           familyi={C\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=09a667aa6a26526bfcccb2676a494e55}{%
+           family={Burovski},
+           familyi={B\bibinitperiod},
+           given={Evgeni},
+           giveni={E\bibinitperiod}}}%
+        {{hash=3d6efaaa3d9682e20787eb06ff70a3d7}{%
+           family={Peterson},
+           familyi={P\bibinitperiod},
+           given={Pearu},
+           giveni={P\bibinitperiod}}}%
+        {{hash=4c7e4c94b846fa41e2fc0a88e0dc656d}{%
+           family={Weckesser},
+           familyi={W\bibinitperiod},
+           given={Warren},
+           giveni={W\bibinitperiod}}}%
+        {{hash=7447cb057596bc2645d3980bb04f5c78}{%
+           family={Bright},
+           familyi={B\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=1b5d87f5a394ee92a6edb4c1de058cab}{%
+           family={{van der Walt}},
+           familyi={v\bibinitperiod},
+           given={Stéfan\bibnamedelima J.},
+           giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{f252038edd7f112d75da3bf0c1edecbc}
+      \strng{fullhash}{35dc684f3883aa5373aaa29c72d60302}
+      \strng{fullhashraw}{35dc684f3883aa5373aaa29c72d60302}
+      \strng{bibnamehash}{35dc684f3883aa5373aaa29c72d60302}
+      \strng{authorbibnamehash}{35dc684f3883aa5373aaa29c72d60302}
+      \strng{authornamehash}{f252038edd7f112d75da3bf0c1edecbc}
+      \strng{authorfullhash}{35dc684f3883aa5373aaa29c72d60302}
+      \strng{authorfullhashraw}{35dc684f3883aa5373aaa29c72d60302}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nature Methods}
+      \field{number}{3}
+      \field{title}{SciPy 1.0: Fundamental Algorithms for Scientific Computing in Python}
+      \field{volume}{17}
+      \field{year}{2020}
+      \field{pages}{261\bibrangedash 272}
+      \range{pages}{12}
+    \endentry
+    \entry{sansalone1997impact}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=d33f110444351458c2194dc0651f0ea0}{%
+           family={Sansalone},
+           familyi={S\bibinitperiod},
+           given={Mary\bibnamedelima J.},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=cc6907ddfe3f2ff46dc5b63001291e52}{%
+           family={Carino},
+           familyi={C\bibinitperiod},
+           given={Nicholas\bibnamedelima J.},
+           giveni={N\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Ithaca}%
+      }
+      \list{publisher}{1}{%
+        {Bullbrier Press}%
+      }
+      \strng{namehash}{aae7fcb26d6d669bf5b5a8781800b4d4}
+      \strng{fullhash}{aae7fcb26d6d669bf5b5a8781800b4d4}
+      \strng{fullhashraw}{aae7fcb26d6d669bf5b5a8781800b4d4}
+      \strng{bibnamehash}{aae7fcb26d6d669bf5b5a8781800b4d4}
+      \strng{authorbibnamehash}{aae7fcb26d6d669bf5b5a8781800b4d4}
+      \strng{authornamehash}{aae7fcb26d6d669bf5b5a8781800b4d4}
+      \strng{authorfullhash}{aae7fcb26d6d669bf5b5a8781800b4d4}
+      \strng{authorfullhashraw}{aae7fcb26d6d669bf5b5a8781800b4d4}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Impact-Echo: Nondestructive Evaluation of Concrete and Masonry}
+      \field{year}{1997}
+    \endentry
+    \entry{carino2001impact}{inproceedings}{}{}
+      \name{author}{1}{}{%
+        {{hash=cc6907ddfe3f2ff46dc5b63001291e52}{%
+           family={Carino},
+           familyi={C\bibinitperiod},
+           given={Nicholas\bibnamedelima J.},
+           giveni={N\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Industrial Physics \& Engineers}%
+      }
+      \strng{namehash}{cc6907ddfe3f2ff46dc5b63001291e52}
+      \strng{fullhash}{cc6907ddfe3f2ff46dc5b63001291e52}
+      \strng{fullhashraw}{cc6907ddfe3f2ff46dc5b63001291e52}
+      \strng{bibnamehash}{cc6907ddfe3f2ff46dc5b63001291e52}
+      \strng{authorbibnamehash}{cc6907ddfe3f2ff46dc5b63001291e52}
+      \strng{authornamehash}{cc6907ddfe3f2ff46dc5b63001291e52}
+      \strng{authorfullhash}{cc6907ddfe3f2ff46dc5b63001291e52}
+      \strng{authorfullhashraw}{cc6907ddfe3f2ff46dc5b63001291e52}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 2001 International Conference on Nondestructive Testing in Civil Engineering}
+      \field{title}{The Impact-Echo Method: An Overview}
+      \field{year}{2001}
+      \field{pages}{1\bibrangedash 18}
+      \range{pages}{18}
+    \endentry
+    \entry{astmc1383}{standard}{}{}
+      \name{author}{1}{}{%
+        {{hash=98d180da27d97e263c9b4e2560091ebc}{%
+           family={{American Society for Testing and Materials}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {West Conshohocken}%
+      }
+      \list{publisher}{1}{%
+        {ASTM International}%
+      }
+      \strng{namehash}{98d180da27d97e263c9b4e2560091ebc}
+      \strng{fullhash}{98d180da27d97e263c9b4e2560091ebc}
+      \strng{fullhashraw}{98d180da27d97e263c9b4e2560091ebc}
+      \strng{bibnamehash}{98d180da27d97e263c9b4e2560091ebc}
+      \strng{authorbibnamehash}{98d180da27d97e263c9b4e2560091ebc}
+      \strng{authornamehash}{98d180da27d97e263c9b4e2560091ebc}
+      \strng{authorfullhash}{98d180da27d97e263c9b4e2560091ebc}
+      \strng{authorfullhashraw}{98d180da27d97e263c9b4e2560091ebc}
+      \field{extraname}{1}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{ASTM C1383-15: Standard Test Method for Measuring the P-Wave Speed and the Thickness of Concrete Plates Using the Impact-Echo Method}
+      \field{year}{2015}
+    \endentry
+    \entry{astmd5882}{standard}{}{}
+      \name{author}{1}{}{%
+        {{hash=98d180da27d97e263c9b4e2560091ebc}{%
+           family={{American Society for Testing and Materials}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {West Conshohocken}%
+      }
+      \list{publisher}{1}{%
+        {ASTM International}%
+      }
+      \strng{namehash}{98d180da27d97e263c9b4e2560091ebc}
+      \strng{fullhash}{98d180da27d97e263c9b4e2560091ebc}
+      \strng{fullhashraw}{98d180da27d97e263c9b4e2560091ebc}
+      \strng{bibnamehash}{98d180da27d97e263c9b4e2560091ebc}
+      \strng{authorbibnamehash}{98d180da27d97e263c9b4e2560091ebc}
+      \strng{authornamehash}{98d180da27d97e263c9b4e2560091ebc}
+      \strng{authorfullhash}{98d180da27d97e263c9b4e2560091ebc}
+      \strng{authorfullhashraw}{98d180da27d97e263c9b4e2560091ebc}
+      \field{extraname}{2}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{ASTM D5882-18: Standard Test Method for Low Strain Impact Integrity Testing of Deep Foundations}
+      \field{year}{2018}
     \endentry
   \enddatalist
 \endrefsection

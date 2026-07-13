@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.14)  13 JUL 2026 13:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.14)  13 JUL 2026 14:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -782,12 +782,12 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 146.
 
-<bancadaDeTeste.jpeg, id=97, 1284.8pt x 966.61125pt>
+<bancadaDeTeste.jpeg, id=105, 1284.8pt x 966.61125pt>
 File: bancadaDeTeste.jpeg Graphic file (type jpg)
 <use bancadaDeTeste.jpeg>
 Package pdftex.def Info: bancadaDeTeste.jpeg  used on input line 186.
 (pdftex.def)             Requested size: 183.52007pt x 138.06801pt.
-<esfera_percussor.jpg, id=98, 4095.3pt x 3071.475pt>
+<esfera_percussor.jpg, id=106, 4095.3pt x 3071.475pt>
 File: esfera_percussor.jpg Graphic file (type jpg)
 <use esfera_percussor.jpg>
 Package pdftex.def Info: esfera_percussor.jpg  used on input line 195.
@@ -798,7 +798,7 @@ LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 2
  (D:\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-<piso_saudavel.jpg, id=117, 4111.36pt x 3083.52pt>
+<piso_saudavel.jpg, id=127, 4111.36pt x 3083.52pt>
 File: piso_saudavel.jpg Graphic file (type jpg)
 <use piso_saudavel.jpg>
 Package pdftex.def Info: piso_saudavel.jpg  used on input line 211.
@@ -808,7 +808,7 @@ Overfull \hbox (1.0pt too wide) in paragraph at lines 211--212
  [][] 
  []
 
-<piso_ruim.jpg, id=118, 4111.36pt x 3083.52pt>
+<piso_ruim.jpg, id=128, 4111.36pt x 3083.52pt>
 File: piso_ruim.jpg Graphic file (type jpg)
 <use piso_ruim.jpg>
 Package pdftex.def Info: piso_ruim.jpg  used on input line 217.
@@ -841,19 +841,19 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 255.
 
-<comparacao_trajetoria.png, id=119, 1204.5pt x 501.875pt>
+<comparacao_trajetoria.png, id=130, 1204.5pt x 501.875pt>
 File: comparacao_trajetoria.png Graphic file (type png)
 <use comparacao_trajetoria.png>
 Package pdftex.def Info: comparacao_trajetoria.png  used on input line 264.
 (pdftex.def)             Requested size: 244.69344pt x 101.95076pt.
-<comparacao_som.png, id=120, 1204.5pt x 501.875pt>
+<comparacao_som.png, id=131, 1204.5pt x 501.875pt>
 File: comparacao_som.png Graphic file (type png)
 <use comparacao_som.png>
 Package pdftex.def Info: comparacao_som.png  used on input line 276.
 (pdftex.def)             Requested size: 244.69344pt x 101.95076pt.
 [3 <./esfera_percussor.jpg> <./piso_saudavel.jpg> <./piso_ruim.jpg> <./comparac
 ao_trajetoria.png>]
-<espectro_fft.png, id=128, 1204.5pt x 501.875pt>
+<espectro_fft.png, id=140, 1204.5pt x 501.875pt>
 File: espectro_fft.png Graphic file (type png)
 <use espectro_fft.png>
 Package pdftex.def Info: espectro_fft.png  used on input line 290.
@@ -873,7 +873,7 @@ Underfull \hbox (badness 1168) in paragraph at lines 313--314
 []\T1/ptm/b/n/10 Ensaio de In-te-gri-dade de Es-ta-cas (PIT - ASTM
  []
 
-
+[4 <./comparacao_som.png> <./espectro_fft.png>]
 Underfull \hbox (badness 1360) in paragraph at lines 319--321
 \T1/ptm/m/n/10 men-tal me-dida pelo Piso-Vibe re-flete a rigidez lo-cal da
  []
@@ -883,10 +883,15 @@ Underfull \hbox (badness 1062) in paragraph at lines 327--328
 \T1/ptm/m/n/10 mil-imétrica da cin-emática de ric-o-chete da es-fera rígida,
  []
 
-[4 <./comparacao_som.png> <./espectro_fft.png>] [5
 
-]
+Package biblatex Warning: No driver for 'standard'.
+(biblatex)                Using fallback driver on input line 336.
 
+
+Package biblatex Warning: No driver for 'standard'.
+(biblatex)                Using fallback driver on input line 336.
+
+[5] 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
 (trabalho.aux)
  ***********
@@ -900,13 +905,13 @@ Package logreq Info: Writing requests to 'trabalho.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 20413 strings out of 467870
- 349462 string characters out of 5435189
- 1208251 words of memory out of 5000000
- 49016 multiletter control sequences out of 15000+600000
+ 20463 strings out of 467870
+ 351402 string characters out of 5435189
+ 1208948 words of memory out of 5000000
+ 49057 multiletter control sequences out of 15000+600000
  660039 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,13n,79p,1445b,1372s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,13n,79p,1445b,1370s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <D:/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:/MiKTeX/fonts/type1/p
 ublic/amsfonts/cm/cmmi10.pfb><D:/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pf
 b><D:/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><D:/MiKTeX/fonts/type1/pu
@@ -917,9 +922,9 @@ MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/MiKTeX/fonts/type1/public/
 amsfonts/cm/cmsy7.pfb><D:/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><D:/M
 iKTeX/fonts/type1/urw/times/utmb8a.pfb><D:/MiKTeX/fonts/type1/urw/times/utmr8a.
 pfb><D:/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on trabalho.pdf (5 pages, 10812809 bytes).
+Output written on trabalho.pdf (5 pages, 10823500 bytes).
 PDF statistics:
- 217 PDF objects out of 1000 (max. 8388607)
- 46 named destinations out of 1000 (max. 500000)
+ 249 PDF objects out of 1000 (max. 8388607)
+ 55 named destinations out of 1000 (max. 500000)
  180 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -117,7 +117,7 @@ backrefstyle=three,
 	Em uma placa cerâmica rigidamente colada, o contrapiso absorve e transmite a energia, resultando em um impacto mais elástico para a esfera rígida. Se houver descolamento ou bolsões de ar, a flexão local da placa cerâmica absorve energia cinética adicional, reduzindo a altura do primeiro rebote e, consequentemente, o valor de $e$.
 	
 	\subsection{Modelo Dinâmico de 1 Grau de Liberdade (Vibração Livre Amortecida)}
-	O comportamento vibracional da placa sob excitação transiente pode ser simplificado por um sistema massa-mola-amortecedor equivalente de um grau de liberdade (1 GDL). A equação governante do movimento é descrita por:
+	O comportamento vibracional da placa sob excitação transiente pode ser simplificado por um sistema massa-mola-amortecedor equivalente de um grau de liberdade (1 GDL), conforme modelado nas teorias clássicas de vibrações \parencite{rao2008vibracoes, thomson2008teoria}. A equação governante do movimento é descrita por:
 	\begin{equation}
 	m\ddot{x}(t) + c\dot{x}(t) + kx(t) = 0
 	\end{equation}
@@ -126,7 +126,7 @@ backrefstyle=three,
 	\ddot{x}(t) + 2\zeta\omega_n\dot{x}(t) + \omega_n^2 x(t) = 0
 	\end{equation}
 	
-	Para estruturas típicas de concreto e cerâmica, o sistema é subamortecido ($\zeta < 1$). A resposta transiente no tempo $x(t)$ devido a uma condição inicial é dada pela equação clássica apresentada por \textcite{rao1995mechanical}:
+	Para estruturas típicas de concreto e cerâmica, o sistema é subamortecido ($\zeta < 1$). A resposta transiente no tempo $x(t)$ devido a uma condição inicial é dada pela equação clássica apresentada por \textcite{rao2008vibracoes}:
 	\begin{equation}
 	x(t) = X_0 e^{-\zeta\omega_n t}\cos(\omega_d t + \phi)
 	\end{equation}
@@ -136,7 +136,7 @@ backrefstyle=three,
 	\end{equation}
 	
 	\subsection{Processamento de Sinais no Domínio da Frequência (FFT)}
-	A Transformada Rápida de Fourier (FFT) é empregada para traduzir o sinal transiente discreto $x[n]$ coletado no domínio do tempo para o domínio da frequência $X[k]$. O pico da magnitude do espectro determina a frequência dominante de ressonância ($f_n$). 
+	A Transformada Rápida de Fourier (FFT) é empregada para traduzir o sinal transiente discreto $x[n]$ coletado no domínio do tempo para o domínio da frequência $X[k]$, fundamentada nos preceitos do processamento digital de sinais em tempo discreto \parencite{oppenheim2012processamento}. O pico da magnitude do espectro determina a frequência dominante de ressonância ($f_n$). 
 	
 	Como a rigidez equivalente do piso apoiado ($k$) decresce acentuadamente nas regiões descoladas (piso oco), a frequência natural sofrerá um desvio negativo ($\Delta f_n < 0$). Essa variação espectral constitui o principal parâmetro de identificação da rigidez de apoio.
 	
@@ -144,7 +144,7 @@ backrefstyle=three,
 	A extração experimental de $\zeta$ a partir de transientes acústicos é realizada por duas metodologias clássicas de processamento digital de sinais:
 	
 	\subsubsection{Decremento Logarítmico Clássico ($\delta$)}
-	A taxa de decaimento entre picos sucessivos $x_1$ e $x_{1+n}$ espaçados por $n$ períodos é quantificada por:
+	A taxa de decaimento entre picos sucessivos $x_1$ e $x_{1+n}$ espaçados por $n$ períodos, descrita sob a formulação clássica de \textcite{rao2008vibracoes}, é quantificada por:
 	\begin{equation}
 	\delta = \frac{1}{n}\ln\left(\frac{x_1}{x_{1+n}}\right)
 	\end{equation}
@@ -154,7 +154,7 @@ backrefstyle=three,
 	\end{equation}
 	
 	\subsubsection{Transformada de Hilbert (Envoltória Contínua)}
-	A Transformada de Hilbert $\hat{x}(t)$ de uma função real no tempo $x(t)$ cria o sinal analítico complexo $z(t)$ que descreve amplitude e fase instantâneas de forma contínua:
+	A Transformada de Hilbert $\hat{x}(t)$ de uma função real no tempo $x(t)$ cria o sinal analítico complexo $z(t)$ que descreve amplitude e fase instantâneas de forma contínua, permitindo extrair de forma robusta o decaimento em vibrações estruturais transientes \parencite{feldman2011hilbert, huang1998empirical}:
 	\begin{equation}
 	z(t) = x(t) + i\hat{x}(t)
 	\end{equation}
@@ -227,7 +227,7 @@ backrefstyle=three,
 		\item \textbf{Microfone do Smartphone:} Posicionado na base do tubo de queda livre, captando o transiente sonoro do impacto a uma taxa de amostragem de $48$ kHz no formato PCM de 32 bits flutuantes.
 	\end{itemize}
 	
-	A interface de controle baseou-se em um servidor web embarcado no microcontrolador ESP32-C3 DevKitM-1 (SuperMini), acessado localmente pelo smartphone via rede Wi-Fi. O software utiliza a \textbf{HTML5 Web Audio API} no navegador do celular para iniciar a gravação do áudio síncrono. Ao final da janela configurada de gravação, os dados cinemáticos de altura obtidos pelo ESP32 são enviados via WebSocket e o navegador consolida ambos os vetores no arquivo `pisovibe\_captura.csv`.
+	A interface de controle baseou-se em um servidor web embarcado no microcontrolador ESP32-C3 DevKitM-1 (SuperMini), acessado localmente pelo smartphone via rede Wi-Fi. O software utiliza a \textbf{HTML5 Web Audio API} no navegador do celular para iniciar a gravação do áudio síncrono. Ao final da janela configurada de gravação, os dados cinemáticos de altura obtidos pelo ESP32 são enviados via WebSocket e o navegador consolida ambos os vetores no arquivo `pisovibe\_captura.csv`. O processamento numérico subsequente e a extração espectral dos dados consolidados foram realizados em rotinas Python utilizando os algoritmos de processamento de sinais da biblioteca SciPy \parencite{virtanen2020scipy}.
 	
 	% ============================================================
 	% RESULTADOS
@@ -306,11 +306,11 @@ backrefstyle=three,
 	% ============================================================
 	\section{Correlação com Métodos Não Destrutivos da Engenharia Civil}
 	
-	A metodologia física implementada no PisoVibe correlaciona-se diretamente com ensaios não destrutivos (END) normatizados e de larga escala utilizados na engenharia de estruturas:
+	A metodologia física implementada no PisoVibe correlaciona-se diretamente com ensaios não destrutivos (END) normatizados e de larga escala utilizados na engenharia de estruturas, amplamente discutidos na literatura científica para detecção de delaminações e falhas de suporte \parencite{sansalone1997impact, carino2001impact}:
 	
 	\begin{itemize}[noitemsep]
-		\item \textbf{Ensaio de Impact-Echo (ASTM C1383):} Utiliza impacto mecânico transiente e processamento de sinal em frequência para detectar delaminações, fissuras internas e avaliar a espessura de placas de concreto. O PisoVibe atua sob o mesmo princípio físico básico da reflexão de ondas de tensão elástica longitudinais (ondas P).
-		\item \textbf{Ensaio de Integridade de Estacas (PIT - ASTM D5882):} Onde o topo de uma estaca é percutido com um martelo e a resposta vibracional no tempo é registrada por acelerômetros para mapear variações de impedância acústica ($Z = \rho C A$), onde $\rho$ é a massa específica, $A$ é a seção transversal e $C$ é a velocidade de propagação de onda no meio.
+		\item \textbf{Ensaio de Impact-Echo (ASTM C1383):} Padronizado pela norma técnica internacional \parencite{astmc1383}, utiliza impacto mecânico transiente e processamento de sinal em frequência para detectar delaminações, fissuras internas e avaliar a espessura de placas de concreto. O PisoVibe atua sob o mesmo princípio físico básico da reflexão de ondas de tensão elástica longitudinais (ondas P).
+		\item \textbf{Ensaio de Integridade de Estacas (PIT - ASTM D5882):} Normatizado pela \parencite{astmd5882}, onde o topo de uma estaca é percutido com um martelo e a resposta vibracional no tempo é registrada por acelerômetros para mapear variações de impedância acústica ($Z = \rho C A$), onde $\rho$ é a massa específica, $A$ é a seção transversal e $C$ é a velocidade de propagação de onda no meio.
 	\end{itemize}
 	
 	Pela física de propagação de ondas em sólidos, a velocidade $C$ da onda mecânica está relacionada com o Módulo de Elasticidade Dinâmico ($E_d$) do concreto ou argamassa por:

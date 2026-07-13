@@ -2373,8 +2373,20 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">referencias.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1" intorder="1">rao1995mechanical</bcf:citekey>
-    <bcf:citekey order="2" intorder="1">rao1995mechanical</bcf:citekey>
+    <bcf:citekey order="1" intorder="1">rao2008vibracoes</bcf:citekey>
+    <bcf:citekey order="1" intorder="2">thomson2008teoria</bcf:citekey>
+    <bcf:citekey order="2" intorder="1">rao2008vibracoes</bcf:citekey>
+    <bcf:citekey order="3" intorder="1">rao2008vibracoes</bcf:citekey>
+    <bcf:citekey order="4" intorder="1">oppenheim2012processamento</bcf:citekey>
+    <bcf:citekey order="5" intorder="1">rao2008vibracoes</bcf:citekey>
+    <bcf:citekey order="6" intorder="1">rao2008vibracoes</bcf:citekey>
+    <bcf:citekey order="7" intorder="1">feldman2011hilbert</bcf:citekey>
+    <bcf:citekey order="7" intorder="2">huang1998empirical</bcf:citekey>
+    <bcf:citekey order="8" intorder="1">virtanen2020scipy</bcf:citekey>
+    <bcf:citekey order="9" intorder="1">sansalone1997impact</bcf:citekey>
+    <bcf:citekey order="9" intorder="2">carino2001impact</bcf:citekey>
+    <bcf:citekey order="10" intorder="1">astmc1383</bcf:citekey>
+    <bcf:citekey order="11" intorder="1">astmd5882</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
