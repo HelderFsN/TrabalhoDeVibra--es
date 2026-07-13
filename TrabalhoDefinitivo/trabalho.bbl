@@ -19,6 +19,173 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global/global}
+    \entry{rao1995mechanical}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=bc8e9a4de974090b1914093e719a785a}{%
+           family={Rao},
+           familyi={R\bibinitperiod},
+           given={Singiresu\bibnamedelima S},
+           giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=dc2579085ed8bf119a0da5bbec016822}{%
+           family={Yap},
+           familyi={Y\bibinitperiod},
+           given={Fook\bibnamedelima Fah},
+           giveni={F\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Addison-Wesley New York}%
+      }
+      \strng{namehash}{96a0e02cb745f62860014440abcfa57b}
+      \strng{fullhash}{96a0e02cb745f62860014440abcfa57b}
+      \strng{fullhashraw}{96a0e02cb745f62860014440abcfa57b}
+      \strng{bibnamehash}{96a0e02cb745f62860014440abcfa57b}
+      \strng{authorbibnamehash}{96a0e02cb745f62860014440abcfa57b}
+      \strng{authornamehash}{96a0e02cb745f62860014440abcfa57b}
+      \strng{authorfullhash}{96a0e02cb745f62860014440abcfa57b}
+      \strng{authorfullhashraw}{96a0e02cb745f62860014440abcfa57b}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Mechanical vibrations}
+      \field{volume}{4}
+      \field{year}{1995}
+    \endentry
+    \entry{blaschke2017non}{inproceedings}{}{}
+      \name{author}{4}{}{%
+        {{hash=2a73791851936ac7b7f921623d337d9f}{%
+           family={Blaschke},
+           familyi={B\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=e4c8613c391aadf6debffcdb55c9b059}{%
+           family={Schneider},
+           familyi={S\bibinitperiod},
+           given={Sarah},
+           giveni={S\bibinitperiod}}}%
+        {{hash=a151a5e313d4870e30262ea15b301d04}{%
+           family={Kamenzky},
+           familyi={K\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+        {{hash=f3d20b290bb1ba2c9d30ded1a5bb95d7}{%
+           family={Alarcón},
+           familyi={A\bibinitperiod},
+           given={Daniel\bibnamedelima J},
+           giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{565f4c9794677991592b9a50c9ea80d5}
+      \strng{fullhash}{ee83f756bb48929a27fc7a1f655aec0b}
+      \strng{fullhashraw}{ee83f756bb48929a27fc7a1f655aec0b}
+      \strng{bibnamehash}{ee83f756bb48929a27fc7a1f655aec0b}
+      \strng{authorbibnamehash}{ee83f756bb48929a27fc7a1f655aec0b}
+      \strng{authornamehash}{565f4c9794677991592b9a50c9ea80d5}
+      \strng{authorfullhash}{ee83f756bb48929a27fc7a1f655aec0b}
+      \strng{authorfullhashraw}{ee83f756bb48929a27fc7a1f655aec0b}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Sensors and Instrumentation, Volume 5: Proceedings of the 35th IMAC, A Conference and Exposition on Structural Dynamics 2017}
+      \field{title}{Non-linearity identification of composite materials by scalable impact modal testing}
+      \field{year}{2017}
+      \field{pages}{7\bibrangedash 14}
+      \range{pages}{8}
+    \endentry
+    \entry{roebben1997impulse}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=e3bf33201cd24ca2c7f3e7fc522815cd}{%
+           family={Roebben},
+           familyi={R\bibinitperiod},
+           given={Gert},
+           giveni={G\bibinitperiod}}}%
+        {{hash=71359c60da72290bf52770209d1238bd}{%
+           family={Bollen},
+           familyi={B\bibinitperiod},
+           given={B},
+           giveni={B\bibinitperiod}}}%
+        {{hash=4c3ad482003f93cf3905e36983d8aa74}{%
+           family={Brebels},
+           familyi={B\bibinitperiod},
+           given={A},
+           giveni={A\bibinitperiod}}}%
+        {{hash=f3ca1570cc3bc65ebc2839377b946729}{%
+           family={Van\bibnamedelima Humbeeck},
+           familyi={V\bibinitperiod\bibinitdelim H\bibinitperiod},
+           given={Jan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=6605479f1b14e012076767730f6f149d}{%
+           family={Van\bibnamedelimb der\bibnamedelima Biest},
+           familyi={V\bibinitperiod\bibinitdelim d\bibinitperiod\bibinitdelim B\bibinitperiod},
+           given={Omer},
+           giveni={O\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Institute of Physics}%
+      }
+      \strng{namehash}{7fe95fd8d6e3ae2ed5a5bd64f7416ec3}
+      \strng{fullhash}{a8fc6324b745579c813e7b565e56b52a}
+      \strng{fullhashraw}{a8fc6324b745579c813e7b565e56b52a}
+      \strng{bibnamehash}{a8fc6324b745579c813e7b565e56b52a}
+      \strng{authorbibnamehash}{a8fc6324b745579c813e7b565e56b52a}
+      \strng{authornamehash}{7fe95fd8d6e3ae2ed5a5bd64f7416ec3}
+      \strng{authorfullhash}{a8fc6324b745579c813e7b565e56b52a}
+      \strng{authorfullhashraw}{a8fc6324b745579c813e7b565e56b52a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Review of scientific instruments}
+      \field{number}{12}
+      \field{title}{Impulse excitation apparatus to measure resonant frequencies, elastic moduli, and internal friction at room and high temperature}
+      \field{volume}{68}
+      \field{year}{1997}
+      \field{pages}{4511\bibrangedash 4515}
+      \range{pages}{5}
+    \endentry
+    \entry{nikolaev2014estimation}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=ce84089ca1df0eb50673d0ba7bd91520}{%
+           family={Nikolaev},
+           familyi={N\bibinitperiod},
+           given={S},
+           giveni={S\bibinitperiod}}}%
+        {{hash=50dce143764d3f042b7e2bfd4019500f}{%
+           family={Voronov},
+           familyi={V\bibinitperiod},
+           given={S},
+           giveni={S\bibinitperiod}}}%
+        {{hash=f390e5914c567f4a94f61d7feae6fd87}{%
+           family={Kiselev},
+           familyi={K\bibinitperiod},
+           given={I},
+           giveni={I\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {JVE International Ltd.}%
+      }
+      \strng{namehash}{da74903c1661d52867ddbee5a613e91d}
+      \strng{fullhash}{da74903c1661d52867ddbee5a613e91d}
+      \strng{fullhashraw}{da74903c1661d52867ddbee5a613e91d}
+      \strng{bibnamehash}{da74903c1661d52867ddbee5a613e91d}
+      \strng{authorbibnamehash}{da74903c1661d52867ddbee5a613e91d}
+      \strng{authornamehash}{da74903c1661d52867ddbee5a613e91d}
+      \strng{authorfullhash}{da74903c1661d52867ddbee5a613e91d}
+      \strng{authorfullhashraw}{da74903c1661d52867ddbee5a613e91d}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Vibroengineering Procedia}
+      \field{title}{Estimation of damping model correctness using experimental modal analysis}
+      \field{volume}{3}
+      \field{year}{2014}
+      \field{pages}{50\bibrangedash 54}
+      \range{pages}{5}
+    \endentry
     \entry{rao2008vibracoes}{book}{}{}
       \name{author}{1}{}{%
         {{hash=bc8e9a4de974090b1914093e719a785a}{%
@@ -41,8 +208,8 @@
       \strng{authornamehash}{bc8e9a4de974090b1914093e719a785a}
       \strng{authorfullhash}{bc8e9a4de974090b1914093e719a785a}
       \strng{authorfullhashraw}{bc8e9a4de974090b1914093e719a785a}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{4}
@@ -76,8 +243,8 @@
       \strng{authornamehash}{1ff90492655272499a7d34a7b96afc0e}
       \strng{authorfullhash}{1ff90492655272499a7d34a7b96afc0e}
       \strng{authorfullhashraw}{1ff90492655272499a7d34a7b96afc0e}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{5}
@@ -111,8 +278,8 @@
       \strng{authornamehash}{6b65fefc61ef07dfae5fcb9291d4aceb}
       \strng{authorfullhash}{6b65fefc61ef07dfae5fcb9291d4aceb}
       \strng{authorfullhashraw}{6b65fefc61ef07dfae5fcb9291d4aceb}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{3}
@@ -141,8 +308,8 @@
       \strng{authornamehash}{244c96635798701847a1e6c990863733}
       \strng{authorfullhash}{244c96635798701847a1e6c990863733}
       \strng{authorfullhashraw}{244c96635798701847a1e6c990863733}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Hilbert Transform Applications in Mechanical Vibration}
@@ -204,8 +371,8 @@
       \strng{authornamehash}{4f5f36b519a9cf55d0929d5d53c91e51}
       \strng{authorfullhash}{69ac1f4a4f3cdd7792eba6de78fed728}
       \strng{authorfullhashraw}{69ac1f4a4f3cdd7792eba6de78fed728}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Proceedings of the Royal Society of London. Series A: Mathematical, Physical and Engineering Sciences}
@@ -284,8 +451,8 @@
       \strng{authornamehash}{f252038edd7f112d75da3bf0c1edecbc}
       \strng{authorfullhash}{35dc684f3883aa5373aaa29c72d60302}
       \strng{authorfullhashraw}{35dc684f3883aa5373aaa29c72d60302}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Nature Methods}
@@ -323,8 +490,8 @@
       \strng{authornamehash}{aae7fcb26d6d669bf5b5a8781800b4d4}
       \strng{authorfullhash}{aae7fcb26d6d669bf5b5a8781800b4d4}
       \strng{authorfullhashraw}{aae7fcb26d6d669bf5b5a8781800b4d4}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Impact-Echo: Nondestructive Evaluation of Concrete and Masonry}
@@ -349,8 +516,8 @@
       \strng{authornamehash}{cc6907ddfe3f2ff46dc5b63001291e52}
       \strng{authorfullhash}{cc6907ddfe3f2ff46dc5b63001291e52}
       \strng{authorfullhashraw}{cc6907ddfe3f2ff46dc5b63001291e52}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proceedings of the 2001 International Conference on Nondestructive Testing in Civil Engineering}
@@ -380,8 +547,8 @@
       \strng{authorfullhash}{98d180da27d97e263c9b4e2560091ebc}
       \strng{authorfullhashraw}{98d180da27d97e263c9b4e2560091ebc}
       \field{extraname}{1}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{ASTM C1383-15: Standard Test Method for Measuring the P-Wave Speed and the Thickness of Concrete Plates Using the Impact-Echo Method}
@@ -408,8 +575,8 @@
       \strng{authorfullhash}{98d180da27d97e263c9b4e2560091ebc}
       \strng{authorfullhashraw}{98d180da27d97e263c9b4e2560091ebc}
       \field{extraname}{2}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{ASTM D5882-18: Standard Test Method for Low Strain Impact Integrity Testing of Deep Foundations}
