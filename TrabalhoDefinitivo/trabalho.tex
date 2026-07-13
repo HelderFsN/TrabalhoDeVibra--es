@@ -178,23 +178,21 @@ Este trabalho apresenta o desenvolvimento do sistema PisoVibe, visando fazer an�
 	\end{equation}
 	
 	\subsection{Materiais}
-	A respeito da bancada experimental, temos que houve a integração sensores ópticos e acústicos. A região delimitada para trajetória de impacta consistiu em um tubo de queda livre vertical de cartolina com altura útil de queda regulada entre $h_0 = 525$ e $540$ mm, posicionado perpendicularmente ao solo conforme apresentado na Figura \ref{fig:bancada_teste}.
+	A respeito da bancada experimental, temos que houve a integração sensores ópticos e acústicos. A região delimitada para trajetória de impacta consistiu em um tubo de queda livre vertical de cartolina com altura útil de queda regulada entre $h_0 = 525$ e $540$ mm, posicionado perpendicularmente ao solo conforme apresentado na Figura \ref{fig:equipamentos}(a).
 	
-	\begin{figure}[htbp]
+	\begin{figure}[!ht]
 		\centering
-		\fbox{\includegraphics[width=0.75\linewidth]{bancadaDeTeste.jpeg}}
-		\caption{Bancada de testes experimental do sistema PisoVibe, evidenciando o tubo de queda vertical e os suportes do conjunto.}
-		\label{fig:bancada_teste}
+		\fbox{\includegraphics[width=0.9\linewidth]{bancadaDeTeste.jpeg}}
+		\caption*{(a) Bancada de teste}
+		
+		\vspace{1.5ex}
+		\fbox{\includegraphics[width=0.55\linewidth]{esfera_percussor.jpg}}
+		\caption*{(b) Esfera de ABS}
+		\caption{Equipamentos experimentais: (a) bancada de testes PisoVibe com tubo de queda vertical; (b) esfera polimérica rígida ($m \approx 2{,}7$ g) utilizada nos ensaios.}
+		\label{fig:equipamentos}
 	\end{figure}
 	
-	O percussor selecionado foi uma esfera polimérica rígida (bola de pingue-pongue Vollo Pro 40+, massa $m \approx 2{,}7$ g, casca fina de plástico ABS), conforme ilustrado na Figura \ref{fig:esfera_percussor}. A escolha técnica do ABS em detrimento de esferas de tênis ou elastômeros macios justifica-se pelo alto módulo de elasticidade e baixíssimo amortecimento interno do material do percussor. Isso garante uma zona de contato extremamente rígida com tempo de colisão infinitesimal, aproximando o impacto a um pulso ideal (Delta de Dirac), o que excita com máxima amplitude as frequências flexurais da laje cerâmica.
-	
-	\begin{figure}[htbp]
-		\centering
-		\fbox{\includegraphics[width=0.7\linewidth]{esfera_percussor.jpg}}
-		\caption{Esfera polimérica rígida (Bola de Pingue-Pongue Vollo Pro 40+, $m = 2{,}7\text{ g}$) utilizada para os ensaios de impacto.}
-		\label{fig:esfera_percussor}
-	\end{figure}
+	O percussor selecionado foi uma esfera polimérica rígida (bola de pingue-pongue Vollo Pro 40+, massa $m \approx 2{,}7$ g, casca fina de plástico ABS), conforme ilustrado na Figura \ref{fig:equipamentos}(b). A escolha técnica do ABS em detrimento de esferas de tênis ou elastômeros macios justifica-se pelo alto módulo de elasticidade e baixíssimo amortecimento interno do material do percussor. Isso garante uma zona de contato extremamente rígida com tempo de colisão infinitesimal, aproximando o impacto a um pulso ideal (Delta de Dirac), o que excita com máxima amplitude as frequências flexurais da laje cerâmica.
 	
 	Os ensaios foram realizados em duas condições de contorno de suporte de placas cerâmicas de dimensões idênticas ($30 \times 30$ cm). Podem serem vistas na Figura \ref{fig:corpos_prova}:
 	\begin{itemize}[noitemsep]
@@ -202,7 +200,7 @@ Este trabalho apresenta o desenvolvimento do sistema PisoVibe, visando fazer an�
 		\item \textbf{Placa Cerâmica Fraturada (Piso Ruim):} Apresentando trinca transversal visível e com descolamento parcial induzido de argamassa na subsuperfície.
 	\end{itemize}
 	
-	\begin{figure}[htbp]
+	\begin{figure}[!ht]
 		\centering
 		\begin{minipage}{0.48\linewidth}
 			\centering
@@ -236,7 +234,7 @@ Este trabalho apresenta o desenvolvimento do sistema PisoVibe, visando fazer an�
 	
 	A perda repentina de altura no piso ruim decorre da deformação da placa na fratura sob o impacto. A abertura transiente da trinca dissipa grande parte da energia mecânica da esfera rígida na forma de atrito interno nas bordas da fratura, impedindo o ricochete eficiente da esfera.
 	
-	\begin{figure}[htbp]
+	\begin{figure}[!ht]
 		\centering
 		\includegraphics[width=0.98\linewidth]{pisosaudavel.pdf}
 		\caption*{(a) Piso Saudável ($e \approx 0{,}49$)}
@@ -251,30 +249,24 @@ Este trabalho apresenta o desenvolvimento do sistema PisoVibe, visando fazer an�
 	
 	No piso ruim, o transiente de som exibe picos iniciais mais elevados e uma reverberação complexa com ruído de alta frequência. Este ruído transiente decorre do atrito e contato local entre as bordas fissuradas da cerâmica fraturada sob o pulso de excitação mecânica, gerando um ruído de cisalhamento característico (atrito na trinca).
 	
-	\begin{figure}[htbp]
+	\begin{figure}[!ht]
 		\centering
-		\begin{minipage}{0.48\linewidth}
-			\centering
-			\includegraphics[width=\linewidth]{pulsopisosaudavel.pdf}
-			\caption*{(a) Piso Saudável}
-		\end{minipage}
-		\hfill
-		\begin{minipage}{0.48\linewidth}
-			\centering
-			\includegraphics[width=\linewidth]{pulsopisocomdefeito.pdf}
-			\caption*{(b) Piso Ruim}
-		\end{minipage}
+		\includegraphics[width=0.98\linewidth]{pulsopisosaudavel.pdf}
+		\caption*{(a) Piso Saudável}
+		\vspace{1.5ex}
+		\includegraphics[width=0.98\linewidth]{pulsopisocomdefeito.pdf}
+		\caption*{(b) Piso Ruim}
 		\caption{Comparação da resposta transiente de pressão sonora gerada no impacto da esfera: (a) placa cerâmica íntegra (Piso Saudável); (b) placa cerâmica fraturada (Piso Ruim).}
 		\label{fig:comparacao_som}
 	\end{figure}
 	
-	A análise espectral do impacto sonoro calculada via FFT, conforme mostra a Figura \ref{espectro_fft}, revelou um comportamento físico marcante:
+	A análise espectral do impacto sonoro calculada via FFT, conforme mostra a Figura \ref{fig:espectro_fft}, revelou um comportamento físico marcante:
 	\begin{itemize}[noitemsep]
 		\item No \textbf{Piso Saudável}, a frequência natural dominante é registrada em $f_n = 570{,}0$ Hz, representando o modo flexural de vibração da placa cerâmica perfeitamente engastada sobre o substrato de argamassa colante sólida.
-		\item No \textbf{Piso Ruim (Fraturado)}, o pico espectral desloca-se acentuadamente para a alta frequência, registrando uma frequência dominante de **$f_n = 1.880{,}0$ Hz**.
+		\item No \textbf{Piso Ruim (Fraturado)}, o pico espectral desloca-se acentuadamente para a alta frequência, registrando uma frequência dominante de $f_n = 1.880{,}0$ Hz.
 	\end{itemize}
 	
-	\begin{figure}[htbp]
+	\begin{figure}[!ht]
 		\centering
 		\includegraphics[width=\linewidth]{espectro_fft.png}
 		\caption{Espectro de frequência (FFT) do som de impacto: deslocamento da frequência dominante entre a placa íntegra e a placa fraturada.}
@@ -289,7 +281,7 @@ Este trabalho apresenta o desenvolvimento do sistema PisoVibe, visando fazer an�
 	
 	O fator de amortecimento acústico ($\zeta$) extraído continuamente via Transformada de Hilbert revelou valores muito semelhantes entre os revestimentos ($\zeta = 1{,}14\%$ no saudável vs. $\zeta = 1{,}20\%$ no fraturado). No entanto, o nível acústico RMS mais elevado no piso fraturado revela a presença de atrito seco e energia radiada na trinca, enquanto o amortecimento mecânico se destaca pela perda total do rebote cinemático.
 	
-	\begin{table}[!h]
+	\begin{table}[!ht]
 		\centering
 		\caption{\textbf{Parâmetros experimentais obtidos para o Piso Saudável (Íntegro).}}
 		\label{tab:parametros_saudavel}
@@ -307,7 +299,7 @@ Este trabalho apresenta o desenvolvimento do sistema PisoVibe, visando fazer an�
 		\end{tabular}
 	\end{table}
 	
-	\begin{table}[!h]
+	\begin{table}[!ht]
 		\centering
 		\caption{\textbf{Parâmetros experimentais obtidos para o Piso Fraturado (Ruim).}}
 		\label{tab:parametros_ruim}
