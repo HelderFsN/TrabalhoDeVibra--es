@@ -16,6 +16,7 @@
 \usepackage{enumitem}
 \usepackage{hyperref}
 \usepackage{indentfirst}
+\usepackage{float} % Permite posicionamento estrito [H]
 
 % ---------- Configurações de Formatação ----------
 \setlength{\mathindent}{1.5em} % Alinhamento das equações à esquerda com indentação
@@ -178,9 +179,16 @@ backrefstyle=three,
 	A metodologia de ensaios não destrutivos baseou-se na montagem de uma bancada vertical e na integração de múltiplos sensores ópticos e acústicos.
 	
 	\subsection{Percussor e Tubo de Queda}
-	A bancada experimental do PisoVibe consistiu em um tubo de queda livre vertical de acrílico transparente com altura útil de queda regulada entre $h_0 = 525$ e $540$ mm, fixado perpendicularmente ao solo por meio de tripés niveladores. 
+	A bancada experimental do PisoVibe consistiu em um tubo de queda livre vertical de acrílico transparente com altura útil de queda regulada entre $h_0 = 525$ e $540$ mm, fixado perpendicularmente ao solo por meio de tripés niveladores, conforme apresentado na Figura 1.
 	
-	O percussor selecionado foi uma esfera polimérica rígida (bola de pingue-pongue Vollo Pro 40+, massa $m = 2{,}7$ g, casca fina de plástico ABS), conforme ilustrado na Figura 1. A escolha técnica do ABS em detrimento de esferas de tênis ou elastômeros macios justifica-se pelo alto módulo de elasticidade e baixíssimo amortecimento interno do material do percussor. Isso garante uma zona de contato extremamente rígida com tempo de colisão infinitesimal, aproximando o impacto a um pulso ideal (Delta de Dirac), o que excita com máxima amplitude as frequências flexurais da laje cerâmica.
+	\begin{figure}[htbp]
+		\centering
+		\fbox{\includegraphics[width=0.75\linewidth]{bancadaDeTeste.jpeg}}
+		\caption{Bancada de testes experimental do sistema PisoVibe, evidenciando o tubo de queda vertical e os suportes do conjunto.}
+		\label{fig:bancada_teste}
+	\end{figure}
+	
+	O percussor selecionado foi uma esfera polimérica rígida (bola de pingue-pongue Vollo Pro 40+, massa $m = 2{,}7$ g, casca fina de plástico ABS), conforme ilustrado na Figura 2. A escolha técnica do ABS em detrimento de esferas de tênis ou elastômeros macios justifica-se pelo alto módulo de elasticidade e baixíssimo amortecimento interno do material do percussor. Isso garante uma zona de contato extremamente rígida com tempo de colisão infinitesimal, aproximando o impacto a um pulso ideal (Delta de Dirac), o que excita com máxima amplitude as frequências flexurais da laje cerâmica.
 	
 	\begin{figure}[htbp]
 		\centering
@@ -190,7 +198,7 @@ backrefstyle=three,
 	\end{figure}
 	
 	\subsection{Corpos de Prova e Condições de Ensaio}
-	Os ensaios foram realizados em duas condições de contorno de suporte de placas cerâmicas de dimensões idênticas ($30 \times 30$ cm), representadas na Figura 2:
+	Os ensaios foram realizados em duas condições de contorno de suporte de placas cerâmicas de dimensões idênticas ($30 \times 30$ cm), representadas na Figura 3:
 	\begin{itemize}[noitemsep]
 		\item \textbf{Placa Cerâmica Íntegra (Piso Saudável):} Assentada de maneira uniforme e sólida com argamassa sobre a base de concreto.
 		\item \textbf{Placa Cerâmica Fraturada (Piso Ruim):} Apresentando trinca transversal visível e com descolamento parcial induzido de argamassa na subsuperfície.
@@ -226,36 +234,52 @@ backrefstyle=three,
 	% ============================================================
 	\section{Resultados e Discussão}
 	
+	\begin{table*}[t]
+		\centering
+		\caption{\textbf{Resumo comparativo dos parâmetros cinemáticos, acústicos e dinâmicos obtidos pelo PisoVibe.}}
+		\label{tab:resumo_parametros}
+		\begin{tabular}{l|c|c|p{4.5cm}}
+			\hline
+			\textbf{Parâmetro Medido / Calculado} & \textbf{Piso Saudável (Íntegro)} & \textbf{Piso Ruim (Fraturado)} & \textbf{Variação / Diagnóstico} \\ \hline
+			Altura Inicial ($h_0$) & $\sim 540\text{ mm}$ & $\sim 525\text{ mm}$ & Condição de soltura padronizada \\
+			Frequência Dominante ($f_n$) & $570{,}0\text{ Hz}$ & $1.880{,}0\text{ Hz}$ & Deslocamento para alta frequência no piso fraturado \\
+			Fator de Amortecimento ($\zeta$) & $1{,}14\%$ & $1{,}20\%$ & Dissipação contínua de reverberação \\
+			Nível Acústico RMS (dBFS) & Menor dispersão & Picos mais elevados & Ruído transiente e atrito nas bordas da trinca \\
+			Comportamento do Rebote & Mantido & Amortecido & Perda de energia mecânica na fratura \\
+			\hline
+		\end{tabular}
+	\end{table*}
+	
 	Os dados experimentais coletados pelo sistema PisoVibe foram processados no domínio do tempo e da frequência para avaliar a integridade física do revestimento.
 	
 	\subsection{Análise Cinemática e Coeficiente de Restituição ($e$)}
 	O alinhamento temporal entre a trajetória cinemática medida pelo sensor ToF VL53L0X e o sinal acústico revelou sincronismo preciso. Os picos de intensidade de áudio coincidiram exatamente com as coordenadas de deslocamento mínimo (altura $h(t) \to 0$ mm) da esfera de ABS.
 	
-	Como observado no gráfico comparativo da Figura 3, a trajetória temporal do rebote difere significativamente entre as duas peças cerâmicas. No piso saudável ($h_0 \sim 540$ mm), o comportamento elástico da colisão é mantido por múltiplos ciclos de quique, resultando em uma trajetória sustentada. Por outro lado, no piso ruim ($h_0 \sim 525$ mm), o quique é severamente amortecido.
+	Como observado no gráfico comparativo da Figura 4, a trajetória temporal do rebote difere significativamente entre as duas peças cerâmicas. No piso saudável ($h_0 \sim 540$ mm), o comportamento elástico da colisão é mantido por múltiplos ciclos de quique, resultando em uma trajetória sustentada. Por outro lado, no piso ruim ($h_0 \sim 525$ mm), o quique é severamente amortecido.
 	
 	A perda repentina de altura no piso ruim decorre da deformação da placa na fratura sob o impacto. A abertura transiente da trinca dissipa grande parte da energia mecânica da esfera rígida na forma de atrito interno nas bordas da fratura, impedindo o ricochete eficiente da esfera.
 	
 	\begin{figure}[htbp]
 		\centering
-		\fbox{\includegraphics[width=\linewidth]{comparacao_trajetoria.png}}
+		\includegraphics[width=\linewidth]{comparacao_trajetoria.png}
 		\caption{Comparativo da trajetória temporal e altura de rebote da esfera entre o piso saudável e o piso ruim.}
 		\label{fig:comparacao_trajetoria}
 	\end{figure}
 	
 	\subsection{Análise Transiente Acústica e Nível de Sinal}
-	A resposta acústica transiente gerada no impacto da esfera (Figura 4) revela padrões claros de integridade. A pressão sonora radiada do piso saudável mostra um amortecimento suave e uniforme da radiação acústica. 
+	A resposta acústica transiente gerada no impacto da esfera (Figura 5) revela padrões claros de integridade. A pressão sonora radiada do piso saudável mostra um amortecimento suave e uniforme da radiação acústica. 
 	
 	No piso ruim, o transiente de som exibe picos iniciais mais elevados e uma reverberação complexa com ruído de alta frequência. Este ruído transiente decorre do atrito e contato local entre as bordas fissuradas da cerâmica fraturada sob o pulso de excitação mecânica, gerando um ruído de cisalhamento característico (atrito na trinca).
 	
 	\begin{figure}[htbp]
 		\centering
-		\fbox{\includegraphics[width=\linewidth]{comparacao_som.png}}
+		\includegraphics[width=\linewidth]{comparacao_som.png}
 		\caption{Comparação da resposta transiente de pressão sonora gerada no impacto da esfera sobre o piso saudável e o piso ruim.}
 		\label{fig:comparacao_som}
 	\end{figure}
 	
 	\subsection{Assinatura Vibracional no Domínio da Frequência (FFT)}
-	A análise espectral do impacto sonoro calculada via FFT (Figura 5) revelou um comportamento físico marcante:
+	A análise espectral do impacto sonoro calculada via FFT (Figura 6) revelou um comportamento físico marcante:
 	\begin{itemize}[noitemsep]
 		\item No \textbf{Piso Saudável}, a frequência natural dominante é registrada em $f_n = 570{,}0$ Hz, representando o modo flexural de vibração da placa cerâmica perfeitamente engastada sobre o substrato de argamassa colante sólida.
 		\item No \textbf{Piso Ruim (Fraturado)}, o pico espectral desloca-se acentuadamente para a alta frequência, registrando uma frequência dominante de **$f_n = 1.880{,}0$ Hz**.
@@ -263,7 +287,7 @@ backrefstyle=three,
 	
 	\begin{figure}[htbp]
 		\centering
-		\fbox{\includegraphics[width=\linewidth]{espectro_fft.png}}
+		\includegraphics[width=\linewidth]{espectro_fft.png}
 		\caption{Espectro de frequência (FFT) do som de impacto: deslocamento da frequência dominante entre a placa íntegra e a placa fraturada.}
 		\label{fig:espectro_fft}
 	\end{figure}
@@ -276,24 +300,6 @@ backrefstyle=three,
 	Os dados numéricos finais consolidados pelo sistema PisoVibe estão apresentados na Tabela 1. 
 	
 	O fator de amortecimento acústico ($\zeta$) extraído continuamente via Transformada de Hilbert revelou valores muito semelhantes entre os revestimentos ($\zeta = 1{,}14\%$ no saudável vs. $\zeta = 1{,}20\%$ no fraturado). No entanto, o nível acústico RMS mais elevado no piso fraturado revela a presença de atrito seco e energia radiada na trinca, enquanto o amortecimento mecânico se destaca pela perda total do rebote cinemático.
-	
-	\begin{table}[!h]
-		\centering
-		\caption{\textbf{Resumo comparativo dos parâmetros cinemáticos, acústicos e dinâmicos obtidos pelo PisoVibe.}}
-		\label{tab:resumo_parametros}
-		\resizebox{\columnwidth}{!}{%
-			\begin{tabular}{l|c|c|p{3.2cm}}
-				\hline
-				\textbf{Parâmetro Medido / Calculado} & \textbf{Piso Saudável (Íntegro)} & \textbf{Piso Ruim (Fraturado)} & \textbf{Variação / Diagnóstico} \\ \hline
-				Altura Inicial ($h_0$) & $\sim 540\text{ mm}$ & $\sim 525\text{ mm}$ & Condição de soltura padronizada \\
-				Frequência Dominante ($f_n$) & $570{,}0\text{ Hz}$ & $1.880{,}0\text{ Hz}$ & Deslocamento para alta frequência no piso fraturado \\
-				Fator de Amortecimento ($\zeta$) & $1{,}14\%$ & $1{,}20\%$ & Dissipação contínua de reverberação \\
-				Nível Acústico RMS (dBFS) & Menor dispersão & Picos mais elevados & Ruído transiente e atrito nas bordas da trinca \\
-				Comportamento do Rebote & Mantido & Amortecido & Perda de energia mecânica na fratura \\
-				\hline
-			\end{tabular}%
-		}
-	\end{table}
 	
 	% ============================================================
 	% CORRELAÇÃO CIVIL
